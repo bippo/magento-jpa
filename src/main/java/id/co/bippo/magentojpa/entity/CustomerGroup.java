@@ -25,25 +25,9 @@ public class CustomerGroup implements Serializable {
 	@Column(name="tax_class_id")
 	private int taxClassId;
 
-	//bi-directional many-to-one association to CatalogProductBundlePriceIndex
-	@OneToMany(mappedBy="customerGroup")
-	private Set<CatalogProductBundlePriceIndex> catalogProductBundlePriceIndexs;
-
 	//bi-directional many-to-one association to CatalogProductEntityTierPrice
 	@OneToMany(mappedBy="customerGroup")
 	private Set<CatalogProductEntityTierPrice> catalogProductEntityTierPrices;
-
-	//bi-directional many-to-one association to CatalogProductIndexPrice
-	@OneToMany(mappedBy="customerGroup")
-	private Set<CatalogProductIndexPrice> catalogProductIndexPrices;
-
-	//bi-directional many-to-one association to CatalogProductIndexTierPrice
-	@OneToMany(mappedBy="customerGroup")
-	private Set<CatalogProductIndexTierPrice> catalogProductIndexTierPrices;
-
-	//bi-directional many-to-one association to CatalogindexMinimalPrice
-	@OneToMany(mappedBy="customerGroup")
-	private Set<CatalogindexMinimalPrice> catalogindexMinimalPrices;
 
 	//bi-directional many-to-one association to CatalogruleGroupWebsite
 	@OneToMany(mappedBy="customerGroup")
@@ -92,44 +76,12 @@ public class CustomerGroup implements Serializable {
 		this.taxClassId = taxClassId;
 	}
 
-	public Set<CatalogProductBundlePriceIndex> getCatalogProductBundlePriceIndexs() {
-		return this.catalogProductBundlePriceIndexs;
-	}
-
-	public void setCatalogProductBundlePriceIndexs(Set<CatalogProductBundlePriceIndex> catalogProductBundlePriceIndexs) {
-		this.catalogProductBundlePriceIndexs = catalogProductBundlePriceIndexs;
-	}
-	
 	public Set<CatalogProductEntityTierPrice> getCatalogProductEntityTierPrices() {
 		return this.catalogProductEntityTierPrices;
 	}
 
 	public void setCatalogProductEntityTierPrices(Set<CatalogProductEntityTierPrice> catalogProductEntityTierPrices) {
 		this.catalogProductEntityTierPrices = catalogProductEntityTierPrices;
-	}
-	
-	public Set<CatalogProductIndexPrice> getCatalogProductIndexPrices() {
-		return this.catalogProductIndexPrices;
-	}
-
-	public void setCatalogProductIndexPrices(Set<CatalogProductIndexPrice> catalogProductIndexPrices) {
-		this.catalogProductIndexPrices = catalogProductIndexPrices;
-	}
-	
-	public Set<CatalogProductIndexTierPrice> getCatalogProductIndexTierPrices() {
-		return this.catalogProductIndexTierPrices;
-	}
-
-	public void setCatalogProductIndexTierPrices(Set<CatalogProductIndexTierPrice> catalogProductIndexTierPrices) {
-		this.catalogProductIndexTierPrices = catalogProductIndexTierPrices;
-	}
-	
-	public Set<CatalogindexMinimalPrice> getCatalogindexMinimalPrices() {
-		return this.catalogindexMinimalPrices;
-	}
-
-	public void setCatalogindexMinimalPrices(Set<CatalogindexMinimalPrice> catalogindexMinimalPrices) {
-		this.catalogindexMinimalPrices = catalogindexMinimalPrices;
 	}
 	
 	public Set<CatalogruleGroupWebsite> getCatalogruleGroupWebsites() {

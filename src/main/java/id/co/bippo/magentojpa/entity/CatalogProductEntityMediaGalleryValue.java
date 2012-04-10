@@ -22,15 +22,15 @@ public class CatalogProductEntityMediaGalleryValue implements Serializable {
 
 	private int position;
 
-	//bi-directional many-to-one association to CoreStore
-    @ManyToOne
-	@JoinColumn(name="store_id")
-	private CoreStore coreStore;
-
-	//bi-directional many-to-one association to CatalogProductEntityMediaGallery
-    @ManyToOne
-	@JoinColumn(name="value_id")
-	private CatalogProductEntityMediaGallery catalogProductEntityMediaGallery;
+//	//bi-directional many-to-one association to CoreStore
+//    @ManyToOne
+//	@JoinColumn(name="store_id")
+//	private CoreStore coreStore;
+//
+//	//bi-directional many-to-one association to CatalogProductEntityMediaGallery
+//    @ManyToOne
+//	@JoinColumn(name="value_id")
+//	private CatalogProductEntityMediaGallery catalogProductEntityMediaGallery;
 
     public CatalogProductEntityMediaGalleryValue() {
     }
@@ -67,20 +67,20 @@ public class CatalogProductEntityMediaGalleryValue implements Serializable {
 		this.position = position;
 	}
 
-	public CoreStore getCoreStore() {
-		return this.coreStore;
-	}
-
-	public void setCoreStore(CoreStore coreStore) {
-		this.coreStore = coreStore;
-	}
-	
-	public CatalogProductEntityMediaGallery getCatalogProductEntityMediaGallery() {
-		return this.catalogProductEntityMediaGallery;
-	}
-
-	public void setCatalogProductEntityMediaGallery(CatalogProductEntityMediaGallery catalogProductEntityMediaGallery) {
-		this.catalogProductEntityMediaGallery = catalogProductEntityMediaGallery;
-	}
+//	public CoreStore getCoreStore() {
+//		return this.coreStore;
+//	}
+//
+//	public void setCoreStore(CoreStore coreStore) {
+//		this.coreStore = coreStore;
+//	}
+//	
+//	public CatalogProductEntityMediaGallery getCatalogProductEntityMediaGallery() {
+//		return this.catalogProductEntityMediaGallery;
+//	}
+//
+//	public void setCatalogProductEntityMediaGallery(CatalogProductEntityMediaGallery catalogProductEntityMediaGallery) {
+//		this.catalogProductEntityMediaGallery = catalogProductEntityMediaGallery;
+//	}
 	
 }

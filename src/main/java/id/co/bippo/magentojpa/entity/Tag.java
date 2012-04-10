@@ -33,17 +33,17 @@ public class Tag implements Serializable {
 	@JoinColumn(name="first_store_id")
 	private CoreStore coreStore;
 
-	//bi-directional many-to-one association to TagProperty
-	@OneToMany(mappedBy="tag")
-	private Set<TagProperty> tagProperties;
+//	//bi-directional many-to-one association to TagProperty
+//	@OneToMany(mappedBy="tag")
+//	private Set<TagProperty> tagProperties;
 
 	//bi-directional many-to-one association to TagRelation
 	@OneToMany(mappedBy="tag")
 	private Set<TagRelation> tagRelations;
 
-	//bi-directional many-to-one association to TagSummary
-	@OneToMany(mappedBy="tag")
-	private Set<TagSummary> tagSummaries;
+//	//bi-directional many-to-one association to TagSummary
+//	@OneToMany(mappedBy="tag")
+//	private Set<TagSummary> tagSummaries;
 
     public Tag() {
     }
@@ -88,13 +88,13 @@ public class Tag implements Serializable {
 		this.coreStore = coreStore;
 	}
 	
-	public Set<TagProperty> getTagProperties() {
-		return this.tagProperties;
-	}
-
-	public void setTagProperties(Set<TagProperty> tagProperties) {
-		this.tagProperties = tagProperties;
-	}
+//	public Set<TagProperty> getTagProperties() {
+//		return this.tagProperties;
+//	}
+//
+//	public void setTagProperties(Set<TagProperty> tagProperties) {
+//		this.tagProperties = tagProperties;
+//	}
 	
 	public Set<TagRelation> getTagRelations() {
 		return this.tagRelations;
@@ -104,12 +104,12 @@ public class Tag implements Serializable {
 		this.tagRelations = tagRelations;
 	}
 	
-	public Set<TagSummary> getTagSummaries() {
-		return this.tagSummaries;
-	}
-
-	public void setTagSummaries(Set<TagSummary> tagSummaries) {
-		this.tagSummaries = tagSummaries;
-	}
+//	public Set<TagSummary> getTagSummaries() {
+//		return this.tagSummaries;
+//	}
+//
+//	public void setTagSummaries(Set<TagSummary> tagSummaries) {
+//		this.tagSummaries = tagSummaries;
+//	}
 	
 }

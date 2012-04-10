@@ -64,33 +64,9 @@ public class CatalogCategoryEntity implements Serializable {
 	@OneToMany(mappedBy="catalogCategoryEntity")
 	private Set<CatalogCategoryEntityVarchar> catalogCategoryEntityVarchars;
 
-	//bi-directional one-to-one association to CatalogCategoryFlatStore1
-	@OneToOne(mappedBy="catalogCategoryEntity")
-	private CatalogCategoryFlatStore1 catalogCategoryFlatStore1;
-
-	//bi-directional one-to-one association to CatalogCategoryFlatStore2
-	@OneToOne(mappedBy="catalogCategoryEntity")
-	private CatalogCategoryFlatStore2 catalogCategoryFlatStore2;
-
-	//bi-directional one-to-one association to CatalogCategoryFlatStore3
-	@OneToOne(mappedBy="catalogCategoryEntity")
-	private CatalogCategoryFlatStore3 catalogCategoryFlatStore3;
-
-	//bi-directional one-to-one association to CatalogCategoryFlatStore4
-	@OneToOne(mappedBy="catalogCategoryEntity")
-	private CatalogCategoryFlatStore4 catalogCategoryFlatStore4;
-
-	//bi-directional one-to-one association to CatalogCategoryFlatStore5
-	@OneToOne(mappedBy="catalogCategoryEntity")
-	private CatalogCategoryFlatStore5 catalogCategoryFlatStore5;
-
-	//bi-directional many-to-one association to CatalogCategoryProduct
-	@OneToMany(mappedBy="catalogCategoryEntity")
-	private Set<CatalogCategoryProduct> catalogCategoryProducts;
-
-	//bi-directional many-to-one association to CatalogCategoryProductIndex
-	@OneToMany(mappedBy="catalogCategoryEntity")
-	private Set<CatalogCategoryProductIndex> catalogCategoryProductIndexs;
+//	//bi-directional many-to-one association to CatalogCategoryProduct
+//	@OneToMany(mappedBy="catalogCategoryEntity")
+//	private Set<CatalogCategoryProduct> catalogCategoryProducts;
 
 	//bi-directional many-to-one association to CoreUrlRewrite
 	@OneToMany(mappedBy="catalogCategoryEntity")
@@ -219,61 +195,13 @@ public class CatalogCategoryEntity implements Serializable {
 		this.catalogCategoryEntityVarchars = catalogCategoryEntityVarchars;
 	}
 	
-	public CatalogCategoryFlatStore1 getCatalogCategoryFlatStore1() {
-		return this.catalogCategoryFlatStore1;
-	}
-
-	public void setCatalogCategoryFlatStore1(CatalogCategoryFlatStore1 catalogCategoryFlatStore1) {
-		this.catalogCategoryFlatStore1 = catalogCategoryFlatStore1;
-	}
-	
-	public CatalogCategoryFlatStore2 getCatalogCategoryFlatStore2() {
-		return this.catalogCategoryFlatStore2;
-	}
-
-	public void setCatalogCategoryFlatStore2(CatalogCategoryFlatStore2 catalogCategoryFlatStore2) {
-		this.catalogCategoryFlatStore2 = catalogCategoryFlatStore2;
-	}
-	
-	public CatalogCategoryFlatStore3 getCatalogCategoryFlatStore3() {
-		return this.catalogCategoryFlatStore3;
-	}
-
-	public void setCatalogCategoryFlatStore3(CatalogCategoryFlatStore3 catalogCategoryFlatStore3) {
-		this.catalogCategoryFlatStore3 = catalogCategoryFlatStore3;
-	}
-	
-	public CatalogCategoryFlatStore4 getCatalogCategoryFlatStore4() {
-		return this.catalogCategoryFlatStore4;
-	}
-
-	public void setCatalogCategoryFlatStore4(CatalogCategoryFlatStore4 catalogCategoryFlatStore4) {
-		this.catalogCategoryFlatStore4 = catalogCategoryFlatStore4;
-	}
-	
-	public CatalogCategoryFlatStore5 getCatalogCategoryFlatStore5() {
-		return this.catalogCategoryFlatStore5;
-	}
-
-	public void setCatalogCategoryFlatStore5(CatalogCategoryFlatStore5 catalogCategoryFlatStore5) {
-		this.catalogCategoryFlatStore5 = catalogCategoryFlatStore5;
-	}
-	
-	public Set<CatalogCategoryProduct> getCatalogCategoryProducts() {
-		return this.catalogCategoryProducts;
-	}
-
-	public void setCatalogCategoryProducts(Set<CatalogCategoryProduct> catalogCategoryProducts) {
-		this.catalogCategoryProducts = catalogCategoryProducts;
-	}
-	
-	public Set<CatalogCategoryProductIndex> getCatalogCategoryProductIndexs() {
-		return this.catalogCategoryProductIndexs;
-	}
-
-	public void setCatalogCategoryProductIndexs(Set<CatalogCategoryProductIndex> catalogCategoryProductIndexs) {
-		this.catalogCategoryProductIndexs = catalogCategoryProductIndexs;
-	}
+//	public Set<CatalogCategoryProduct> getCatalogCategoryProducts() {
+//		return this.catalogCategoryProducts;
+//	}
+//
+//	public void setCatalogCategoryProducts(Set<CatalogCategoryProduct> catalogCategoryProducts) {
+//		this.catalogCategoryProducts = catalogCategoryProducts;
+//	}
 	
 	public Set<CoreUrlRewrite> getCoreUrlRewrites() {
 		return this.coreUrlRewrites;

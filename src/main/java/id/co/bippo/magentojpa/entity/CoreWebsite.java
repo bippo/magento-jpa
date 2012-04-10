@@ -32,29 +32,13 @@ public class CoreWebsite implements Serializable {
 	@Column(name="sort_order")
 	private int sortOrder;
 
-	//bi-directional many-to-one association to CatalogProductBundlePriceIndex
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CatalogProductBundlePriceIndex> catalogProductBundlePriceIndexs;
-
-	//bi-directional many-to-one association to CatalogProductBundleSelectionPrice
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CatalogProductBundleSelectionPrice> catalogProductBundleSelectionPrices;
+//	//bi-directional many-to-one association to CatalogProductBundleSelectionPrice
+//	@OneToMany(mappedBy="coreWebsite")
+//	private Set<CatalogProductBundleSelectionPrice> catalogProductBundleSelectionPrices;
 
 	//bi-directional many-to-one association to CatalogProductEntityTierPrice
 	@OneToMany(mappedBy="coreWebsite")
 	private Set<CatalogProductEntityTierPrice> catalogProductEntityTierPrices;
-
-	//bi-directional many-to-one association to CatalogProductIndexPrice
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CatalogProductIndexPrice> catalogProductIndexPrices;
-
-	//bi-directional many-to-one association to CatalogProductIndexTierPrice
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CatalogProductIndexTierPrice> catalogProductIndexTierPrices;
-
-	//bi-directional one-to-one association to CatalogProductIndexWebsite
-	@OneToOne(mappedBy="coreWebsite")
-	private CatalogProductIndexWebsite catalogProductIndexWebsite;
 
 	//bi-directional many-to-one association to CatalogProductSuperAttributePricing
 	@OneToMany(mappedBy="coreWebsite")
@@ -63,14 +47,6 @@ public class CoreWebsite implements Serializable {
 	//bi-directional many-to-many association to CatalogProductEntity
 	@ManyToMany(mappedBy="coreWebsites")
 	private Set<CatalogProductEntity> catalogProductEntities;
-
-	//bi-directional many-to-one association to CatalogindexMinimalPrice
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CatalogindexMinimalPrice> catalogindexMinimalPrices;
-
-	//bi-directional many-to-one association to CatalogindexPrice
-//	@OneToMany(mappedBy="coreWebsite")
-//	private Set<CatalogindexPrice> catalogindexPrices;
 
 	//bi-directional many-to-one association to CataloginventoryStockStatus
 	@OneToMany(mappedBy="coreWebsite")
@@ -96,9 +72,9 @@ public class CoreWebsite implements Serializable {
 	@OneToMany(mappedBy="coreWebsite")
 	private Set<CoreStoreGroup> coreStoreGroups;
 
-	//bi-directional many-to-one association to CustomerEavAttributeWebsite
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CustomerEavAttributeWebsite> customerEavAttributeWebsites;
+//	//bi-directional many-to-one association to CustomerEavAttributeWebsite
+//	@OneToMany(mappedBy="coreWebsite")
+//	private Set<CustomerEavAttributeWebsite> customerEavAttributeWebsites;
 
 	//bi-directional many-to-one association to CustomerEntity
 	@OneToMany(mappedBy="coreWebsite")
@@ -187,21 +163,13 @@ public class CoreWebsite implements Serializable {
 		this.sortOrder = sortOrder;
 	}
 
-	public Set<CatalogProductBundlePriceIndex> getCatalogProductBundlePriceIndexs() {
-		return this.catalogProductBundlePriceIndexs;
-	}
-
-	public void setCatalogProductBundlePriceIndexs(Set<CatalogProductBundlePriceIndex> catalogProductBundlePriceIndexs) {
-		this.catalogProductBundlePriceIndexs = catalogProductBundlePriceIndexs;
-	}
-	
-	public Set<CatalogProductBundleSelectionPrice> getCatalogProductBundleSelectionPrices() {
-		return this.catalogProductBundleSelectionPrices;
-	}
-
-	public void setCatalogProductBundleSelectionPrices(Set<CatalogProductBundleSelectionPrice> catalogProductBundleSelectionPrices) {
-		this.catalogProductBundleSelectionPrices = catalogProductBundleSelectionPrices;
-	}
+//	public Set<CatalogProductBundleSelectionPrice> getCatalogProductBundleSelectionPrices() {
+//		return this.catalogProductBundleSelectionPrices;
+//	}
+//
+//	public void setCatalogProductBundleSelectionPrices(Set<CatalogProductBundleSelectionPrice> catalogProductBundleSelectionPrices) {
+//		this.catalogProductBundleSelectionPrices = catalogProductBundleSelectionPrices;
+//	}
 	
 	public Set<CatalogProductEntityTierPrice> getCatalogProductEntityTierPrices() {
 		return this.catalogProductEntityTierPrices;
@@ -209,30 +177,6 @@ public class CoreWebsite implements Serializable {
 
 	public void setCatalogProductEntityTierPrices(Set<CatalogProductEntityTierPrice> catalogProductEntityTierPrices) {
 		this.catalogProductEntityTierPrices = catalogProductEntityTierPrices;
-	}
-	
-	public Set<CatalogProductIndexPrice> getCatalogProductIndexPrices() {
-		return this.catalogProductIndexPrices;
-	}
-
-	public void setCatalogProductIndexPrices(Set<CatalogProductIndexPrice> catalogProductIndexPrices) {
-		this.catalogProductIndexPrices = catalogProductIndexPrices;
-	}
-	
-	public Set<CatalogProductIndexTierPrice> getCatalogProductIndexTierPrices() {
-		return this.catalogProductIndexTierPrices;
-	}
-
-	public void setCatalogProductIndexTierPrices(Set<CatalogProductIndexTierPrice> catalogProductIndexTierPrices) {
-		this.catalogProductIndexTierPrices = catalogProductIndexTierPrices;
-	}
-	
-	public CatalogProductIndexWebsite getCatalogProductIndexWebsite() {
-		return this.catalogProductIndexWebsite;
-	}
-
-	public void setCatalogProductIndexWebsite(CatalogProductIndexWebsite catalogProductIndexWebsite) {
-		this.catalogProductIndexWebsite = catalogProductIndexWebsite;
 	}
 	
 	public Set<CatalogProductSuperAttributePricing> getCatalogProductSuperAttributePricings() {
@@ -249,22 +193,6 @@ public class CoreWebsite implements Serializable {
 
 	public void setCatalogProductEntities(Set<CatalogProductEntity> catalogProductEntities) {
 		this.catalogProductEntities = catalogProductEntities;
-	}
-	
-	public Set<CatalogindexMinimalPrice> getCatalogindexMinimalPrices() {
-		return this.catalogindexMinimalPrices;
-	}
-
-	public void setCatalogindexMinimalPrices(Set<CatalogindexMinimalPrice> catalogindexMinimalPrices) {
-		this.catalogindexMinimalPrices = catalogindexMinimalPrices;
-	}
-	
-	public Set<CatalogindexPrice> getCatalogindexPrices() {
-		return this.catalogindexPrices;
-	}
-
-	public void setCatalogindexPrices(Set<CatalogindexPrice> catalogindexPrices) {
-		this.catalogindexPrices = catalogindexPrices;
 	}
 	
 	public Set<CataloginventoryStockStatus> getCataloginventoryStockStatuses() {
@@ -315,13 +243,13 @@ public class CoreWebsite implements Serializable {
 		this.coreStoreGroups = coreStoreGroups;
 	}
 	
-	public Set<CustomerEavAttributeWebsite> getCustomerEavAttributeWebsites() {
-		return this.customerEavAttributeWebsites;
-	}
-
-	public void setCustomerEavAttributeWebsites(Set<CustomerEavAttributeWebsite> customerEavAttributeWebsites) {
-		this.customerEavAttributeWebsites = customerEavAttributeWebsites;
-	}
+//	public Set<CustomerEavAttributeWebsite> getCustomerEavAttributeWebsites() {
+//		return this.customerEavAttributeWebsites;
+//	}
+//
+//	public void setCustomerEavAttributeWebsites(Set<CustomerEavAttributeWebsite> customerEavAttributeWebsites) {
+//		this.customerEavAttributeWebsites = customerEavAttributeWebsites;
+//	}
 	
 	public Set<CustomerEntity> getCustomerEntities() {
 		return this.customerEntities;
@@ -379,13 +307,13 @@ public class CoreWebsite implements Serializable {
 		this.salesruleProductAttributes = salesruleProductAttributes;
 	}
 	
-	public Set<WeeeDiscount> getWeeeDiscounts() {
-		return this.weeeDiscounts;
-	}
-
-	public void setWeeeDiscounts(Set<WeeeDiscount> weeeDiscounts) {
-		this.weeeDiscounts = weeeDiscounts;
-	}
+//	public Set<WeeeDiscount> getWeeeDiscounts() {
+//		return this.weeeDiscounts;
+//	}
+//
+//	public void setWeeeDiscounts(Set<WeeeDiscount> weeeDiscounts) {
+//		this.weeeDiscounts = weeeDiscounts;
+//	}
 	
 	public Set<WeeeTax> getWeeeTaxs() {
 		return this.weeeTaxs;

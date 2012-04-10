@@ -116,22 +116,6 @@ public class EavAttribute implements Serializable {
 	@OneToMany(mappedBy="eavAttribute")
 	private Set<CatalogProductEntityVarchar> catalogProductEntityVarchars;
 
-	//bi-directional many-to-one association to CatalogProductIndexEav
-	@OneToMany(mappedBy="eavAttribute")
-	private Set<CatalogProductIndexEav> catalogProductIndexEavs;
-
-	//bi-directional many-to-one association to CatalogProductIndexEavDecimal
-	@OneToMany(mappedBy="eavAttribute")
-	private Set<CatalogProductIndexEavDecimal> catalogProductIndexEavDecimals;
-
-	//bi-directional many-to-one association to CatalogindexEav
-	@OneToMany(mappedBy="eavAttribute")
-	private Set<CatalogindexEav> catalogindexEavs;
-
-	//bi-directional many-to-one association to CatalogindexPrice
-	@OneToMany(mappedBy="eavAttribute")
-	private Set<CatalogindexPrice> catalogindexPrices;
-
 	//bi-directional many-to-one association to CustomerAddressEntityDatetime
 	@OneToMany(mappedBy="eavAttribute")
 	private Set<CustomerAddressEntityDatetime> customerAddressEntityDatetimes;
@@ -156,9 +140,9 @@ public class EavAttribute implements Serializable {
 	@OneToOne(mappedBy="eavAttribute")
 	private CustomerEavAttribute customerEavAttribute;
 
-	//bi-directional many-to-one association to CustomerEavAttributeWebsite
-	@OneToMany(mappedBy="eavAttribute")
-	private Set<CustomerEavAttributeWebsite> customerEavAttributeWebsites;
+//	//bi-directional many-to-one association to CustomerEavAttributeWebsite
+//	@OneToMany(mappedBy="eavAttribute")
+//	private Set<CustomerEavAttributeWebsite> customerEavAttributeWebsites;
 
 	//bi-directional many-to-one association to CustomerEntityDatetime
 	@OneToMany(mappedBy="eavAttribute")
@@ -180,9 +164,9 @@ public class EavAttribute implements Serializable {
 	@OneToMany(mappedBy="eavAttribute")
 	private Set<CustomerEntityVarchar> customerEntityVarchars;
 
-	//bi-directional many-to-one association to CustomerFormAttribute
-	@OneToMany(mappedBy="eavAttribute")
-	private Set<CustomerFormAttribute> customerFormAttributes;
+//	//bi-directional many-to-one association to CustomerFormAttribute
+//	@OneToMany(mappedBy="eavAttribute")
+//	private Set<CustomerFormAttribute> customerFormAttributes;
 
 	//bi-directional many-to-one association to EavEntityType
     @ManyToOne
@@ -452,38 +436,6 @@ public class EavAttribute implements Serializable {
 		this.catalogProductEntityVarchars = catalogProductEntityVarchars;
 	}
 	
-	public Set<CatalogProductIndexEav> getCatalogProductIndexEavs() {
-		return this.catalogProductIndexEavs;
-	}
-
-	public void setCatalogProductIndexEavs(Set<CatalogProductIndexEav> catalogProductIndexEavs) {
-		this.catalogProductIndexEavs = catalogProductIndexEavs;
-	}
-	
-	public Set<CatalogProductIndexEavDecimal> getCatalogProductIndexEavDecimals() {
-		return this.catalogProductIndexEavDecimals;
-	}
-
-	public void setCatalogProductIndexEavDecimals(Set<CatalogProductIndexEavDecimal> catalogProductIndexEavDecimals) {
-		this.catalogProductIndexEavDecimals = catalogProductIndexEavDecimals;
-	}
-	
-	public Set<CatalogindexEav> getCatalogindexEavs() {
-		return this.catalogindexEavs;
-	}
-
-	public void setCatalogindexEavs(Set<CatalogindexEav> catalogindexEavs) {
-		this.catalogindexEavs = catalogindexEavs;
-	}
-	
-	public Set<CatalogindexPrice> getCatalogindexPrices() {
-		return this.catalogindexPrices;
-	}
-
-	public void setCatalogindexPrices(Set<CatalogindexPrice> catalogindexPrices) {
-		this.catalogindexPrices = catalogindexPrices;
-	}
-	
 	public Set<CustomerAddressEntityDatetime> getCustomerAddressEntityDatetimes() {
 		return this.customerAddressEntityDatetimes;
 	}
@@ -532,13 +484,13 @@ public class EavAttribute implements Serializable {
 		this.customerEavAttribute = customerEavAttribute;
 	}
 	
-	public Set<CustomerEavAttributeWebsite> getCustomerEavAttributeWebsites() {
-		return this.customerEavAttributeWebsites;
-	}
-
-	public void setCustomerEavAttributeWebsites(Set<CustomerEavAttributeWebsite> customerEavAttributeWebsites) {
-		this.customerEavAttributeWebsites = customerEavAttributeWebsites;
-	}
+//	public Set<CustomerEavAttributeWebsite> getCustomerEavAttributeWebsites() {
+//		return this.customerEavAttributeWebsites;
+//	}
+//
+//	public void setCustomerEavAttributeWebsites(Set<CustomerEavAttributeWebsite> customerEavAttributeWebsites) {
+//		this.customerEavAttributeWebsites = customerEavAttributeWebsites;
+//	}
 	
 	public Set<CustomerEntityDatetime> getCustomerEntityDatetimes() {
 		return this.customerEntityDatetimes;
@@ -580,13 +532,13 @@ public class EavAttribute implements Serializable {
 		this.customerEntityVarchars = customerEntityVarchars;
 	}
 	
-	public Set<CustomerFormAttribute> getCustomerFormAttributes() {
-		return this.customerFormAttributes;
-	}
-
-	public void setCustomerFormAttributes(Set<CustomerFormAttribute> customerFormAttributes) {
-		this.customerFormAttributes = customerFormAttributes;
-	}
+//	public Set<CustomerFormAttribute> getCustomerFormAttributes() {
+//		return this.customerFormAttributes;
+//	}
+//
+//	public void setCustomerFormAttributes(Set<CustomerFormAttribute> customerFormAttributes) {
+//		this.customerFormAttributes = customerFormAttributes;
+//	}
 	
 	public EavEntityType getEavEntityType() {
 		return this.eavEntityType;

@@ -29,15 +29,15 @@ public class CustomerEavAttributeWebsite implements Serializable {
 	@Column(name="multiline_count")
 	private int multilineCount;
 
-	//bi-directional many-to-one association to EavAttribute
-    @ManyToOne
-	@JoinColumn(name="attribute_id")
-	private EavAttribute eavAttribute;
-
-	//bi-directional many-to-one association to CoreWebsite
-    @ManyToOne
-	@JoinColumn(name="website_id")
-	private CoreWebsite coreWebsite;
+//	//bi-directional many-to-one association to EavAttribute
+//    @ManyToOne
+//	@JoinColumn(name="attribute_id")
+//	private EavAttribute eavAttribute;
+//
+//	//bi-directional many-to-one association to CoreWebsite
+//    @ManyToOne
+//	@JoinColumn(name="website_id")
+//	private CoreWebsite coreWebsite;
 
     public CustomerEavAttributeWebsite() {
     }
@@ -82,20 +82,20 @@ public class CustomerEavAttributeWebsite implements Serializable {
 		this.multilineCount = multilineCount;
 	}
 
-	public EavAttribute getEavAttribute() {
-		return this.eavAttribute;
-	}
-
-	public void setEavAttribute(EavAttribute eavAttribute) {
-		this.eavAttribute = eavAttribute;
-	}
-	
-	public CoreWebsite getCoreWebsite() {
-		return this.coreWebsite;
-	}
-
-	public void setCoreWebsite(CoreWebsite coreWebsite) {
-		this.coreWebsite = coreWebsite;
-	}
+//	public EavAttribute getEavAttribute() {
+//		return this.eavAttribute;
+//	}
+//
+//	public void setEavAttribute(EavAttribute eavAttribute) {
+//		this.eavAttribute = eavAttribute;
+//	}
+//	
+//	public CoreWebsite getCoreWebsite() {
+//		return this.coreWebsite;
+//	}
+//
+//	public void setCoreWebsite(CoreWebsite coreWebsite) {
+//		this.coreWebsite = coreWebsite;
+//	}
 	
 }

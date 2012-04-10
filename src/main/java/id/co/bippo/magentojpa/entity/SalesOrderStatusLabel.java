@@ -18,15 +18,15 @@ public class SalesOrderStatusLabel implements Serializable {
 
 	private String label;
 
-	//bi-directional many-to-one association to SalesOrderStatus
-    @ManyToOne
-	@JoinColumn(name="status")
-	private SalesOrderStatus salesOrderStatus;
+//	//bi-directional many-to-one association to SalesOrderStatus
+//    @ManyToOne
+//	@JoinColumn(name="status")
+//	private SalesOrderStatus salesOrderStatus;
 
-	//bi-directional many-to-one association to CoreStore
-    @ManyToOne
-	@JoinColumn(name="store_id")
-	private CoreStore coreStore;
+//	//bi-directional many-to-one association to CoreStore
+//    @ManyToOne
+//	@JoinColumn(name="store_id")
+//	private CoreStore coreStore;
 
     public SalesOrderStatusLabel() {
     }
@@ -47,20 +47,20 @@ public class SalesOrderStatusLabel implements Serializable {
 		this.label = label;
 	}
 
-	public SalesOrderStatus getSalesOrderStatus() {
-		return this.salesOrderStatus;
-	}
-
-	public void setSalesOrderStatus(SalesOrderStatus salesOrderStatus) {
-		this.salesOrderStatus = salesOrderStatus;
-	}
+//	public SalesOrderStatus getSalesOrderStatus() {
+//		return this.salesOrderStatus;
+//	}
+//
+//	public void setSalesOrderStatus(SalesOrderStatus salesOrderStatus) {
+//		this.salesOrderStatus = salesOrderStatus;
+//	}
 	
-	public CoreStore getCoreStore() {
-		return this.coreStore;
-	}
-
-	public void setCoreStore(CoreStore coreStore) {
-		this.coreStore = coreStore;
-	}
+//	public CoreStore getCoreStore() {
+//		return this.coreStore;
+//	}
+//
+//	public void setCoreStore(CoreStore coreStore) {
+//		this.coreStore = coreStore;
+//	}
 	
 }

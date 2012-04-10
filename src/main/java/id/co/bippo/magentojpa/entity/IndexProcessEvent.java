@@ -18,15 +18,15 @@ public class IndexProcessEvent implements Serializable {
 
 	private String status;
 
-	//bi-directional many-to-one association to IndexEvent
-    @ManyToOne
-	@JoinColumn(name="event_id")
-	private IndexEvent indexEvent;
-
-	//bi-directional many-to-one association to IndexProcess
-    @ManyToOne
-	@JoinColumn(name="process_id")
-	private IndexProcess indexProcess;
+//	//bi-directional many-to-one association to IndexEvent
+//    @ManyToOne
+//	@JoinColumn(name="event_id")
+//	private IndexEvent indexEvent;
+//
+//	//bi-directional many-to-one association to IndexProcess
+//    @ManyToOne
+//	@JoinColumn(name="process_id")
+//	private IndexProcess indexProcess;
 
     public IndexProcessEvent() {
     }
@@ -47,20 +47,20 @@ public class IndexProcessEvent implements Serializable {
 		this.status = status;
 	}
 
-	public IndexEvent getIndexEvent() {
-		return this.indexEvent;
-	}
-
-	public void setIndexEvent(IndexEvent indexEvent) {
-		this.indexEvent = indexEvent;
-	}
-	
-	public IndexProcess getIndexProcess() {
-		return this.indexProcess;
-	}
-
-	public void setIndexProcess(IndexProcess indexProcess) {
-		this.indexProcess = indexProcess;
-	}
+//	public IndexEvent getIndexEvent() {
+//		return this.indexEvent;
+//	}
+//
+//	public void setIndexEvent(IndexEvent indexEvent) {
+//		this.indexEvent = indexEvent;
+//	}
+//	
+//	public IndexProcess getIndexProcess() {
+//		return this.indexProcess;
+//	}
+//
+//	public void setIndexProcess(IndexProcess indexProcess) {
+//		this.indexProcess = indexProcess;
+//	}
 	
 }

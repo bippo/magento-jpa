@@ -16,10 +16,10 @@ public class CustomerFormAttribute implements Serializable {
 	@EmbeddedId
 	private CustomerFormAttributePK id;
 
-	//bi-directional many-to-one association to EavAttribute
-    @ManyToOne
-	@JoinColumn(name="attribute_id")
-	private EavAttribute eavAttribute;
+//	//bi-directional many-to-one association to EavAttribute
+//    @ManyToOne
+//	@JoinColumn(name="attribute_id")
+//	private EavAttribute eavAttribute;
 
     public CustomerFormAttribute() {
     }
@@ -32,12 +32,12 @@ public class CustomerFormAttribute implements Serializable {
 		this.id = id;
 	}
 	
-	public EavAttribute getEavAttribute() {
-		return this.eavAttribute;
-	}
-
-	public void setEavAttribute(EavAttribute eavAttribute) {
-		this.eavAttribute = eavAttribute;
-	}
+//	public EavAttribute getEavAttribute() {
+//		return this.eavAttribute;
+//	}
+//
+//	public void setEavAttribute(EavAttribute eavAttribute) {
+//		this.eavAttribute = eavAttribute;
+//	}
 	
 }

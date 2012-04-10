@@ -18,15 +18,15 @@ public class EavFormFieldsetLabel implements Serializable {
 
 	private String label;
 
-	//bi-directional many-to-one association to CoreStore
-    @ManyToOne
-	@JoinColumn(name="store_id")
-	private CoreStore coreStore;
-
-	//bi-directional many-to-one association to EavFormFieldset
-    @ManyToOne
-	@JoinColumn(name="fieldset_id")
-	private EavFormFieldset eavFormFieldset;
+//	//bi-directional many-to-one association to CoreStore
+//    @ManyToOne
+//	@JoinColumn(name="store_id")
+//	private CoreStore coreStore;
+//
+//	//bi-directional many-to-one association to EavFormFieldset
+//    @ManyToOne
+//	@JoinColumn(name="fieldset_id")
+//	private EavFormFieldset eavFormFieldset;
 
     public EavFormFieldsetLabel() {
     }
@@ -47,20 +47,20 @@ public class EavFormFieldsetLabel implements Serializable {
 		this.label = label;
 	}
 
-	public CoreStore getCoreStore() {
-		return this.coreStore;
-	}
-
-	public void setCoreStore(CoreStore coreStore) {
-		this.coreStore = coreStore;
-	}
-	
-	public EavFormFieldset getEavFormFieldset() {
-		return this.eavFormFieldset;
-	}
-
-	public void setEavFormFieldset(EavFormFieldset eavFormFieldset) {
-		this.eavFormFieldset = eavFormFieldset;
-	}
+//	public CoreStore getCoreStore() {
+//		return this.coreStore;
+//	}
+//
+//	public void setCoreStore(CoreStore coreStore) {
+//		this.coreStore = coreStore;
+//	}
+//	
+//	public EavFormFieldset getEavFormFieldset() {
+//		return this.eavFormFieldset;
+//	}
+//
+//	public void setEavFormFieldset(EavFormFieldset eavFormFieldset) {
+//		this.eavFormFieldset = eavFormFieldset;
+//	}
 	
 }

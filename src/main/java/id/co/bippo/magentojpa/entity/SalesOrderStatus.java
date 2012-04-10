@@ -20,9 +20,9 @@ public class SalesOrderStatus implements Serializable {
 
 	private String label;
 
-	//bi-directional many-to-one association to SalesOrderStatusLabel
-	@OneToMany(mappedBy="salesOrderStatus")
-	private Set<SalesOrderStatusLabel> salesOrderStatusLabels;
+//	//bi-directional many-to-one association to SalesOrderStatusLabel
+//	@OneToMany(mappedBy="salesOrderStatus")
+//	private Set<SalesOrderStatusLabel> salesOrderStatusLabels;
 
 	//bi-directional many-to-one association to SalesOrderStatusState
 	@OneToMany(mappedBy="salesOrderStatus")
@@ -47,13 +47,13 @@ public class SalesOrderStatus implements Serializable {
 		this.label = label;
 	}
 
-	public Set<SalesOrderStatusLabel> getSalesOrderStatusLabels() {
-		return this.salesOrderStatusLabels;
-	}
-
-	public void setSalesOrderStatusLabels(Set<SalesOrderStatusLabel> salesOrderStatusLabels) {
-		this.salesOrderStatusLabels = salesOrderStatusLabels;
-	}
+//	public Set<SalesOrderStatusLabel> getSalesOrderStatusLabels() {
+//		return this.salesOrderStatusLabels;
+//	}
+//
+//	public void setSalesOrderStatusLabels(Set<SalesOrderStatusLabel> salesOrderStatusLabels) {
+//		this.salesOrderStatusLabels = salesOrderStatusLabels;
+//	}
 	
 	public Set<SalesOrderStatusState> getSalesOrderStatusStates() {
 		return this.salesOrderStatusStates;

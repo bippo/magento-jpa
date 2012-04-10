@@ -41,9 +41,9 @@ public class Rating implements Serializable {
 	@ManyToMany(mappedBy="ratings")
 	private Set<CoreStore> coreStores;
 
-	//bi-directional many-to-one association to RatingTitle
-	@OneToMany(mappedBy="rating")
-	private Set<RatingTitle> ratingTitles;
+//	//bi-directional many-to-one association to RatingTitle
+//	@OneToMany(mappedBy="rating")
+//	private Set<RatingTitle> ratingTitles;
 
     public Rating() {
     }
@@ -104,12 +104,12 @@ public class Rating implements Serializable {
 		this.coreStores = coreStores;
 	}
 	
-	public Set<RatingTitle> getRatingTitles() {
-		return this.ratingTitles;
-	}
-
-	public void setRatingTitles(Set<RatingTitle> ratingTitles) {
-		this.ratingTitles = ratingTitles;
-	}
+//	public Set<RatingTitle> getRatingTitles() {
+//		return this.ratingTitles;
+//	}
+//
+//	public void setRatingTitles(Set<RatingTitle> ratingTitles) {
+//		this.ratingTitles = ratingTitles;
+//	}
 	
 }

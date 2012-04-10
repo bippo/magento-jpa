@@ -48,9 +48,9 @@ public class XmlconnectApplication implements Serializable {
 	@JoinColumn(name="store_id")
 	private CoreStore coreStore;
 
-	//bi-directional many-to-one association to XmlconnectConfigData
-	@OneToMany(mappedBy="xmlconnectApplication")
-	private Set<XmlconnectConfigData> xmlconnectConfigData;
+//	//bi-directional many-to-one association to XmlconnectConfigData
+//	@OneToMany(mappedBy="xmlconnectApplication")
+//	private Set<XmlconnectConfigData> xmlconnectConfigData;
 
 	//bi-directional many-to-one association to XmlconnectHistory
 	@OneToMany(mappedBy="xmlconnectApplication")
@@ -143,13 +143,13 @@ public class XmlconnectApplication implements Serializable {
 		this.coreStore = coreStore;
 	}
 	
-	public Set<XmlconnectConfigData> getXmlconnectConfigData() {
-		return this.xmlconnectConfigData;
-	}
-
-	public void setXmlconnectConfigData(Set<XmlconnectConfigData> xmlconnectConfigData) {
-		this.xmlconnectConfigData = xmlconnectConfigData;
-	}
+//	public Set<XmlconnectConfigData> getXmlconnectConfigData() {
+//		return this.xmlconnectConfigData;
+//	}
+//
+//	public void setXmlconnectConfigData(Set<XmlconnectConfigData> xmlconnectConfigData) {
+//		this.xmlconnectConfigData = xmlconnectConfigData;
+//	}
 	
 	public Set<XmlconnectHistory> getXmlconnectHistories() {
 		return this.xmlconnectHistories;

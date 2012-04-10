@@ -18,15 +18,15 @@ public class RatingTitle implements Serializable {
 
 	private String value;
 
-	//bi-directional many-to-one association to Rating
-    @ManyToOne
-	@JoinColumn(name="rating_id")
-	private Rating rating;
-
-	//bi-directional many-to-one association to CoreStore
-    @ManyToOne
-	@JoinColumn(name="store_id")
-	private CoreStore coreStore;
+//	//bi-directional many-to-one association to Rating
+//    @ManyToOne
+//	@JoinColumn(name="rating_id")
+//	private Rating rating;
+//
+//	//bi-directional many-to-one association to CoreStore
+//    @ManyToOne
+//	@JoinColumn(name="store_id")
+//	private CoreStore coreStore;
 
     public RatingTitle() {
     }
@@ -47,20 +47,20 @@ public class RatingTitle implements Serializable {
 		this.value = value;
 	}
 
-	public Rating getRating() {
-		return this.rating;
-	}
-
-	public void setRating(Rating rating) {
-		this.rating = rating;
-	}
-	
-	public CoreStore getCoreStore() {
-		return this.coreStore;
-	}
-
-	public void setCoreStore(CoreStore coreStore) {
-		this.coreStore = coreStore;
-	}
+//	public Rating getRating() {
+//		return this.rating;
+//	}
+//
+//	public void setRating(Rating rating) {
+//		this.rating = rating;
+//	}
+//	
+//	public CoreStore getCoreStore() {
+//		return this.coreStore;
+//	}
+//
+//	public void setCoreStore(CoreStore coreStore) {
+//		this.coreStore = coreStore;
+//	}
 	
 }

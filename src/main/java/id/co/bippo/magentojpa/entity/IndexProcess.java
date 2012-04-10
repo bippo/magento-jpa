@@ -33,9 +33,9 @@ public class IndexProcess implements Serializable {
 
 	private String status;
 
-	//bi-directional many-to-one association to IndexProcessEvent
-	@OneToMany(mappedBy="indexProcess")
-	private Set<IndexProcessEvent> indexProcessEvents;
+//	//bi-directional many-to-one association to IndexProcessEvent
+//	@OneToMany(mappedBy="indexProcess")
+//	private Set<IndexProcessEvent> indexProcessEvents;
 
     public IndexProcess() {
     }
@@ -88,12 +88,12 @@ public class IndexProcess implements Serializable {
 		this.status = status;
 	}
 
-	public Set<IndexProcessEvent> getIndexProcessEvents() {
-		return this.indexProcessEvents;
-	}
-
-	public void setIndexProcessEvents(Set<IndexProcessEvent> indexProcessEvents) {
-		this.indexProcessEvents = indexProcessEvents;
-	}
+//	public Set<IndexProcessEvent> getIndexProcessEvents() {
+//		return this.indexProcessEvents;
+//	}
+//
+//	public void setIndexProcessEvents(Set<IndexProcessEvent> indexProcessEvents) {
+//		this.indexProcessEvents = indexProcessEvents;
+//	}
 	
 }

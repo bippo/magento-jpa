@@ -49,37 +49,9 @@ public class CoreStore implements Serializable {
 	@OneToMany(mappedBy="coreStore")
 	private Set<CatalogCategoryEntityVarchar> catalogCategoryEntityVarchars;
 
-	//bi-directional many-to-one association to CatalogCategoryFlatStore1
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogCategoryFlatStore1> catalogCategoryFlatStore1s;
-
-	//bi-directional many-to-one association to CatalogCategoryFlatStore2
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogCategoryFlatStore2> catalogCategoryFlatStore2s;
-
-	//bi-directional many-to-one association to CatalogCategoryFlatStore3
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogCategoryFlatStore3> catalogCategoryFlatStore3s;
-
-	//bi-directional many-to-one association to CatalogCategoryFlatStore4
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogCategoryFlatStore4> catalogCategoryFlatStore4s;
-
-	//bi-directional many-to-one association to CatalogCategoryFlatStore5
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogCategoryFlatStore5> catalogCategoryFlatStore5s;
-
-	//bi-directional many-to-one association to CatalogCategoryProductIndex
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogCategoryProductIndex> catalogCategoryProductIndexs;
-
 	//bi-directional many-to-one association to CatalogCompareItem
 	@OneToMany(mappedBy="coreStore")
 	private Set<CatalogCompareItem> catalogCompareItems;
-
-	//bi-directional many-to-one association to CatalogProductEnabledIndex
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogProductEnabledIndex> catalogProductEnabledIndexs;
 
 	//bi-directional many-to-one association to CatalogProductEntityDatetime
 	@OneToMany(mappedBy="coreStore")
@@ -97,9 +69,9 @@ public class CoreStore implements Serializable {
 	@OneToMany(mappedBy="coreStore")
 	private Set<CatalogProductEntityInt> catalogProductEntityInts;
 
-	//bi-directional many-to-one association to CatalogProductEntityMediaGalleryValue
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogProductEntityMediaGalleryValue> catalogProductEntityMediaGalleryValues;
+//	//bi-directional many-to-one association to CatalogProductEntityMediaGalleryValue
+//	@OneToMany(mappedBy="coreStore")
+//	private Set<CatalogProductEntityMediaGalleryValue> catalogProductEntityMediaGalleryValues;
 
 	//bi-directional many-to-one association to CatalogProductEntityText
 	@OneToMany(mappedBy="coreStore")
@@ -108,14 +80,6 @@ public class CoreStore implements Serializable {
 	//bi-directional many-to-one association to CatalogProductEntityVarchar
 	@OneToMany(mappedBy="coreStore")
 	private Set<CatalogProductEntityVarchar> catalogProductEntityVarchars;
-
-	//bi-directional many-to-one association to CatalogProductIndexEav
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogProductIndexEav> catalogProductIndexEavs;
-
-	//bi-directional many-to-one association to CatalogProductIndexEavDecimal
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogProductIndexEavDecimal> catalogProductIndexEavDecimals;
 
 	//bi-directional many-to-one association to CatalogProductOptionPrice
 	@OneToMany(mappedBy="coreStore")
@@ -136,14 +100,6 @@ public class CoreStore implements Serializable {
 	//bi-directional many-to-one association to CatalogProductSuperAttributeLabel
 	@OneToMany(mappedBy="coreStore")
 	private Set<CatalogProductSuperAttributeLabel> catalogProductSuperAttributeLabels;
-
-	//bi-directional many-to-one association to CatalogindexAggregation
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogindexAggregation> catalogindexAggregations;
-
-	//bi-directional many-to-one association to CatalogindexEav
-	@OneToMany(mappedBy="coreStore")
-	private Set<CatalogindexEav> catalogindexEavs;
 
 	//bi-directional many-to-one association to CatalogsearchQuery
 	@OneToMany(mappedBy="coreStore")
@@ -273,9 +229,9 @@ public class CoreStore implements Serializable {
 	@OneToMany(mappedBy="coreStore")
 	private Set<EavEntityVarchar> eavEntityVarchars;
 
-	//bi-directional many-to-one association to EavFormFieldsetLabel
-	@OneToMany(mappedBy="coreStore")
-	private Set<EavFormFieldsetLabel> eavFormFieldsetLabels;
+//	//bi-directional many-to-one association to EavFormFieldsetLabel
+//	@OneToMany(mappedBy="coreStore")
+//	private Set<EavFormFieldsetLabel> eavFormFieldsetLabels;
 
 	//bi-directional many-to-one association to EavFormType
 	@OneToMany(mappedBy="coreStore")
@@ -331,9 +287,9 @@ public class CoreStore implements Serializable {
 		)
 	private Set<Rating> ratings;
 
-	//bi-directional many-to-one association to RatingTitle
-	@OneToMany(mappedBy="coreStore")
-	private Set<RatingTitle> ratingTitles;
+//	//bi-directional many-to-one association to RatingTitle
+//	@OneToMany(mappedBy="coreStore")
+//	private Set<RatingTitle> ratingTitles;
 
 	//bi-directional many-to-one association to ReportComparedProductIndex
 	@OneToMany(mappedBy="coreStore")
@@ -445,8 +401,8 @@ public class CoreStore implements Serializable {
 	private Set<SalesOrderAggregatedUpdated> salesOrderAggregatedUpdateds;
 
 	//bi-directional many-to-one association to SalesOrderStatusLabel
-	@OneToMany(mappedBy="coreStore")
-	private Set<SalesOrderStatusLabel> salesOrderStatusLabels;
+//	@OneToMany(mappedBy="coreStore")
+//	private Set<SalesOrderStatusLabel> salesOrderStatusLabels;
 
 	//bi-directional many-to-one association to SalesRecurringProfile
 	@OneToMany(mappedBy="coreStore")
@@ -480,17 +436,17 @@ public class CoreStore implements Serializable {
 	@OneToMany(mappedBy="coreStore")
 	private Set<Tag> tags;
 
-	//bi-directional many-to-one association to TagProperty
-	@OneToMany(mappedBy="coreStore")
-	private Set<TagProperty> tagProperties;
+//	//bi-directional many-to-one association to TagProperty
+//	@OneToMany(mappedBy="coreStore")
+//	private Set<TagProperty> tagProperties;
 
 	//bi-directional many-to-one association to TagRelation
 	@OneToMany(mappedBy="coreStore")
 	private Set<TagRelation> tagRelations;
 
-	//bi-directional many-to-one association to TagSummary
-	@OneToMany(mappedBy="coreStore")
-	private Set<TagSummary> tagSummaries;
+//	//bi-directional many-to-one association to TagSummary
+//	@OneToMany(mappedBy="coreStore")
+//	private Set<TagSummary> tagSummaries;
 
 	//bi-directional many-to-one association to TaxCalculationRateTitle
 	@OneToMany(mappedBy="coreStore")
@@ -595,68 +551,12 @@ public class CoreStore implements Serializable {
 		this.catalogCategoryEntityVarchars = catalogCategoryEntityVarchars;
 	}
 	
-	public Set<CatalogCategoryFlatStore1> getCatalogCategoryFlatStore1s() {
-		return this.catalogCategoryFlatStore1s;
-	}
-
-	public void setCatalogCategoryFlatStore1s(Set<CatalogCategoryFlatStore1> catalogCategoryFlatStore1s) {
-		this.catalogCategoryFlatStore1s = catalogCategoryFlatStore1s;
-	}
-	
-	public Set<CatalogCategoryFlatStore2> getCatalogCategoryFlatStore2s() {
-		return this.catalogCategoryFlatStore2s;
-	}
-
-	public void setCatalogCategoryFlatStore2s(Set<CatalogCategoryFlatStore2> catalogCategoryFlatStore2s) {
-		this.catalogCategoryFlatStore2s = catalogCategoryFlatStore2s;
-	}
-	
-	public Set<CatalogCategoryFlatStore3> getCatalogCategoryFlatStore3s() {
-		return this.catalogCategoryFlatStore3s;
-	}
-
-	public void setCatalogCategoryFlatStore3s(Set<CatalogCategoryFlatStore3> catalogCategoryFlatStore3s) {
-		this.catalogCategoryFlatStore3s = catalogCategoryFlatStore3s;
-	}
-	
-	public Set<CatalogCategoryFlatStore4> getCatalogCategoryFlatStore4s() {
-		return this.catalogCategoryFlatStore4s;
-	}
-
-	public void setCatalogCategoryFlatStore4s(Set<CatalogCategoryFlatStore4> catalogCategoryFlatStore4s) {
-		this.catalogCategoryFlatStore4s = catalogCategoryFlatStore4s;
-	}
-	
-	public Set<CatalogCategoryFlatStore5> getCatalogCategoryFlatStore5s() {
-		return this.catalogCategoryFlatStore5s;
-	}
-
-	public void setCatalogCategoryFlatStore5s(Set<CatalogCategoryFlatStore5> catalogCategoryFlatStore5s) {
-		this.catalogCategoryFlatStore5s = catalogCategoryFlatStore5s;
-	}
-	
-	public Set<CatalogCategoryProductIndex> getCatalogCategoryProductIndexs() {
-		return this.catalogCategoryProductIndexs;
-	}
-
-	public void setCatalogCategoryProductIndexs(Set<CatalogCategoryProductIndex> catalogCategoryProductIndexs) {
-		this.catalogCategoryProductIndexs = catalogCategoryProductIndexs;
-	}
-	
 	public Set<CatalogCompareItem> getCatalogCompareItems() {
 		return this.catalogCompareItems;
 	}
 
 	public void setCatalogCompareItems(Set<CatalogCompareItem> catalogCompareItems) {
 		this.catalogCompareItems = catalogCompareItems;
-	}
-	
-	public Set<CatalogProductEnabledIndex> getCatalogProductEnabledIndexs() {
-		return this.catalogProductEnabledIndexs;
-	}
-
-	public void setCatalogProductEnabledIndexs(Set<CatalogProductEnabledIndex> catalogProductEnabledIndexs) {
-		this.catalogProductEnabledIndexs = catalogProductEnabledIndexs;
 	}
 	
 	public Set<CatalogProductEntityDatetime> getCatalogProductEntityDatetimes() {
@@ -691,13 +591,13 @@ public class CoreStore implements Serializable {
 		this.catalogProductEntityInts = catalogProductEntityInts;
 	}
 	
-	public Set<CatalogProductEntityMediaGalleryValue> getCatalogProductEntityMediaGalleryValues() {
-		return this.catalogProductEntityMediaGalleryValues;
-	}
-
-	public void setCatalogProductEntityMediaGalleryValues(Set<CatalogProductEntityMediaGalleryValue> catalogProductEntityMediaGalleryValues) {
-		this.catalogProductEntityMediaGalleryValues = catalogProductEntityMediaGalleryValues;
-	}
+//	public Set<CatalogProductEntityMediaGalleryValue> getCatalogProductEntityMediaGalleryValues() {
+//		return this.catalogProductEntityMediaGalleryValues;
+//	}
+//
+//	public void setCatalogProductEntityMediaGalleryValues(Set<CatalogProductEntityMediaGalleryValue> catalogProductEntityMediaGalleryValues) {
+//		this.catalogProductEntityMediaGalleryValues = catalogProductEntityMediaGalleryValues;
+//	}
 	
 	public Set<CatalogProductEntityText> getCatalogProductEntityTexts() {
 		return this.catalogProductEntityTexts;
@@ -713,22 +613,6 @@ public class CoreStore implements Serializable {
 
 	public void setCatalogProductEntityVarchars(Set<CatalogProductEntityVarchar> catalogProductEntityVarchars) {
 		this.catalogProductEntityVarchars = catalogProductEntityVarchars;
-	}
-	
-	public Set<CatalogProductIndexEav> getCatalogProductIndexEavs() {
-		return this.catalogProductIndexEavs;
-	}
-
-	public void setCatalogProductIndexEavs(Set<CatalogProductIndexEav> catalogProductIndexEavs) {
-		this.catalogProductIndexEavs = catalogProductIndexEavs;
-	}
-	
-	public Set<CatalogProductIndexEavDecimal> getCatalogProductIndexEavDecimals() {
-		return this.catalogProductIndexEavDecimals;
-	}
-
-	public void setCatalogProductIndexEavDecimals(Set<CatalogProductIndexEavDecimal> catalogProductIndexEavDecimals) {
-		this.catalogProductIndexEavDecimals = catalogProductIndexEavDecimals;
 	}
 	
 	public Set<CatalogProductOptionPrice> getCatalogProductOptionPrices() {
@@ -769,22 +653,6 @@ public class CoreStore implements Serializable {
 
 	public void setCatalogProductSuperAttributeLabels(Set<CatalogProductSuperAttributeLabel> catalogProductSuperAttributeLabels) {
 		this.catalogProductSuperAttributeLabels = catalogProductSuperAttributeLabels;
-	}
-	
-	public Set<CatalogindexAggregation> getCatalogindexAggregations() {
-		return this.catalogindexAggregations;
-	}
-
-	public void setCatalogindexAggregations(Set<CatalogindexAggregation> catalogindexAggregations) {
-		this.catalogindexAggregations = catalogindexAggregations;
-	}
-	
-	public Set<CatalogindexEav> getCatalogindexEavs() {
-		return this.catalogindexEavs;
-	}
-
-	public void setCatalogindexEavs(Set<CatalogindexEav> catalogindexEavs) {
-		this.catalogindexEavs = catalogindexEavs;
 	}
 	
 	public Set<CatalogsearchQuery> getCatalogsearchQueries() {
@@ -1003,13 +871,13 @@ public class CoreStore implements Serializable {
 		this.eavEntityVarchars = eavEntityVarchars;
 	}
 	
-	public Set<EavFormFieldsetLabel> getEavFormFieldsetLabels() {
-		return this.eavFormFieldsetLabels;
-	}
-
-	public void setEavFormFieldsetLabels(Set<EavFormFieldsetLabel> eavFormFieldsetLabels) {
-		this.eavFormFieldsetLabels = eavFormFieldsetLabels;
-	}
+//	public Set<EavFormFieldsetLabel> getEavFormFieldsetLabels() {
+//		return this.eavFormFieldsetLabels;
+//	}
+//
+//	public void setEavFormFieldsetLabels(Set<EavFormFieldsetLabel> eavFormFieldsetLabels) {
+//		this.eavFormFieldsetLabels = eavFormFieldsetLabels;
+//	}
 	
 	public Set<EavFormType> getEavFormTypes() {
 		return this.eavFormTypes;
@@ -1083,13 +951,13 @@ public class CoreStore implements Serializable {
 		this.ratings = ratings;
 	}
 	
-	public Set<RatingTitle> getRatingTitles() {
-		return this.ratingTitles;
-	}
-
-	public void setRatingTitles(Set<RatingTitle> ratingTitles) {
-		this.ratingTitles = ratingTitles;
-	}
+//	public Set<RatingTitle> getRatingTitles() {
+//		return this.ratingTitles;
+//	}
+//
+//	public void setRatingTitles(Set<RatingTitle> ratingTitles) {
+//		this.ratingTitles = ratingTitles;
+//	}
 	
 	public Set<ReportComparedProductIndex> getReportComparedProductIndexs() {
 		return this.reportComparedProductIndexs;
@@ -1291,13 +1159,13 @@ public class CoreStore implements Serializable {
 		this.salesOrderAggregatedUpdateds = salesOrderAggregatedUpdateds;
 	}
 	
-	public Set<SalesOrderStatusLabel> getSalesOrderStatusLabels() {
-		return this.salesOrderStatusLabels;
-	}
-
-	public void setSalesOrderStatusLabels(Set<SalesOrderStatusLabel> salesOrderStatusLabels) {
-		this.salesOrderStatusLabels = salesOrderStatusLabels;
-	}
+//	public Set<SalesOrderStatusLabel> getSalesOrderStatusLabels() {
+//		return this.salesOrderStatusLabels;
+//	}
+//
+//	public void setSalesOrderStatusLabels(Set<SalesOrderStatusLabel> salesOrderStatusLabels) {
+//		this.salesOrderStatusLabels = salesOrderStatusLabels;
+//	}
 	
 	public Set<SalesRecurringProfile> getSalesRecurringProfiles() {
 		return this.salesRecurringProfiles;
@@ -1363,13 +1231,13 @@ public class CoreStore implements Serializable {
 		this.tags = tags;
 	}
 	
-	public Set<TagProperty> getTagProperties() {
-		return this.tagProperties;
-	}
-
-	public void setTagProperties(Set<TagProperty> tagProperties) {
-		this.tagProperties = tagProperties;
-	}
+//	public Set<TagProperty> getTagProperties() {
+//		return this.tagProperties;
+//	}
+//
+//	public void setTagProperties(Set<TagProperty> tagProperties) {
+//		this.tagProperties = tagProperties;
+//	}
 	
 	public Set<TagRelation> getTagRelations() {
 		return this.tagRelations;
@@ -1379,13 +1247,13 @@ public class CoreStore implements Serializable {
 		this.tagRelations = tagRelations;
 	}
 	
-	public Set<TagSummary> getTagSummaries() {
-		return this.tagSummaries;
-	}
-
-	public void setTagSummaries(Set<TagSummary> tagSummaries) {
-		this.tagSummaries = tagSummaries;
-	}
+//	public Set<TagSummary> getTagSummaries() {
+//		return this.tagSummaries;
+//	}
+//
+//	public void setTagSummaries(Set<TagSummary> tagSummaries) {
+//		this.tagSummaries = tagSummaries;
+//	}
 	
 	public Set<TaxCalculationRateTitle> getTaxCalculationRateTitles() {
 		return this.taxCalculationRateTitles;

@@ -37,13 +37,9 @@ public class CatalogProductEntity implements Serializable {
 	@Column(name="updated_at")
 	private Timestamp updatedAt;
 
-	//bi-directional many-to-one association to CatalogCategoryProduct
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogCategoryProduct> catalogCategoryProducts;
-
-	//bi-directional many-to-one association to CatalogCategoryProductIndex
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogCategoryProductIndex> catalogCategoryProductIndexs;
+//	//bi-directional many-to-one association to CatalogCategoryProduct
+//	@OneToMany(mappedBy="catalogProductEntity")
+//	private Set<CatalogCategoryProduct> catalogCategoryProducts;
 
 	//bi-directional many-to-one association to CatalogCompareItem
 	@OneToMany(mappedBy="catalogProductEntity")
@@ -53,17 +49,9 @@ public class CatalogProductEntity implements Serializable {
 	@OneToMany(mappedBy="catalogProductEntity")
 	private Set<CatalogProductBundleOption> catalogProductBundleOptions;
 
-	//bi-directional many-to-one association to CatalogProductBundlePriceIndex
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogProductBundlePriceIndex> catalogProductBundlePriceIndexs;
-
 	//bi-directional many-to-one association to CatalogProductBundleSelection
 	@OneToMany(mappedBy="catalogProductEntity")
 	private Set<CatalogProductBundleSelection> catalogProductBundleSelections;
-
-	//bi-directional many-to-one association to CatalogProductEnabledIndex
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogProductEnabledIndex> catalogProductEnabledIndexs;
 
 	//bi-directional many-to-one association to EavAttributeSet
     @ManyToOne
@@ -106,38 +94,6 @@ public class CatalogProductEntity implements Serializable {
 	//bi-directional many-to-one association to CatalogProductEntityVarchar
 	@OneToMany(mappedBy="catalogProductEntity")
 	private Set<CatalogProductEntityVarchar> catalogProductEntityVarchars;
-
-	//bi-directional one-to-one association to CatalogProductFlat1
-	@OneToOne(mappedBy="catalogProductEntity")
-	private CatalogProductFlat1 catalogProductFlat1;
-
-	//bi-directional one-to-one association to CatalogProductFlat2
-	@OneToOne(mappedBy="catalogProductEntity")
-	private CatalogProductFlat2 catalogProductFlat2;
-
-	//bi-directional one-to-one association to CatalogProductFlat4
-	@OneToOne(mappedBy="catalogProductEntity")
-	private CatalogProductFlat4 catalogProductFlat4;
-
-	//bi-directional one-to-one association to CatalogProductFlat5
-	@OneToOne(mappedBy="catalogProductEntity")
-	private CatalogProductFlat5 catalogProductFlat5;
-
-	//bi-directional many-to-one association to CatalogProductIndexEav
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogProductIndexEav> catalogProductIndexEavs;
-
-	//bi-directional many-to-one association to CatalogProductIndexEavDecimal
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogProductIndexEavDecimal> catalogProductIndexEavDecimals;
-
-	//bi-directional many-to-one association to CatalogProductIndexPrice
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogProductIndexPrice> catalogProductIndexPrices;
-
-	//bi-directional many-to-one association to CatalogProductIndexTierPrice
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogProductIndexTierPrice> catalogProductIndexTierPrices;
 
 	//bi-directional many-to-one association to CatalogProductLink
 	@OneToMany(mappedBy="catalogProductEntity1")
@@ -193,14 +149,6 @@ public class CatalogProductEntity implements Serializable {
 		)
 	private Set<CoreWebsite> coreWebsites;
 
-	//bi-directional many-to-one association to CatalogindexEav
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogindexEav> catalogindexEavs;
-
-	//bi-directional many-to-one association to CatalogindexMinimalPrice
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogindexMinimalPrice> catalogindexMinimalPrices;
-
 	//bi-directional many-to-one association to CatalogindexPrice
 //	@OneToMany(mappedBy="catalogProductEntity")
 //	private Set<CatalogindexPrice> catalogindexPrices;
@@ -221,9 +169,9 @@ public class CatalogProductEntity implements Serializable {
 	@OneToMany(mappedBy="catalogProductEntity")
 	private Set<CatalogruleProductPrice> catalogruleProductPrices;
 
-	//bi-directional many-to-one association to CatalogsearchResult
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogsearchResult> catalogsearchResults;
+//	//bi-directional many-to-one association to CatalogsearchResult
+//	@OneToMany(mappedBy="catalogProductEntity")
+//	private Set<CatalogsearchResult> catalogsearchResults;
 
 	//bi-directional many-to-one association to CoreUrlRewrite
 	@OneToMany(mappedBy="catalogProductEntity")
@@ -348,21 +296,13 @@ public class CatalogProductEntity implements Serializable {
 		this.updatedAt = updatedAt;
 	}
 
-	public Set<CatalogCategoryProduct> getCatalogCategoryProducts() {
-		return this.catalogCategoryProducts;
-	}
-
-	public void setCatalogCategoryProducts(Set<CatalogCategoryProduct> catalogCategoryProducts) {
-		this.catalogCategoryProducts = catalogCategoryProducts;
-	}
-	
-	public Set<CatalogCategoryProductIndex> getCatalogCategoryProductIndexs() {
-		return this.catalogCategoryProductIndexs;
-	}
-
-	public void setCatalogCategoryProductIndexs(Set<CatalogCategoryProductIndex> catalogCategoryProductIndexs) {
-		this.catalogCategoryProductIndexs = catalogCategoryProductIndexs;
-	}
+//	public Set<CatalogCategoryProduct> getCatalogCategoryProducts() {
+//		return this.catalogCategoryProducts;
+//	}
+//
+//	public void setCatalogCategoryProducts(Set<CatalogCategoryProduct> catalogCategoryProducts) {
+//		this.catalogCategoryProducts = catalogCategoryProducts;
+//	}
 	
 	public Set<CatalogCompareItem> getCatalogCompareItems() {
 		return this.catalogCompareItems;
@@ -380,28 +320,12 @@ public class CatalogProductEntity implements Serializable {
 		this.catalogProductBundleOptions = catalogProductBundleOptions;
 	}
 	
-	public Set<CatalogProductBundlePriceIndex> getCatalogProductBundlePriceIndexs() {
-		return this.catalogProductBundlePriceIndexs;
-	}
-
-	public void setCatalogProductBundlePriceIndexs(Set<CatalogProductBundlePriceIndex> catalogProductBundlePriceIndexs) {
-		this.catalogProductBundlePriceIndexs = catalogProductBundlePriceIndexs;
-	}
-	
 	public Set<CatalogProductBundleSelection> getCatalogProductBundleSelections() {
 		return this.catalogProductBundleSelections;
 	}
 
 	public void setCatalogProductBundleSelections(Set<CatalogProductBundleSelection> catalogProductBundleSelections) {
 		this.catalogProductBundleSelections = catalogProductBundleSelections;
-	}
-	
-	public Set<CatalogProductEnabledIndex> getCatalogProductEnabledIndexs() {
-		return this.catalogProductEnabledIndexs;
-	}
-
-	public void setCatalogProductEnabledIndexs(Set<CatalogProductEnabledIndex> catalogProductEnabledIndexs) {
-		this.catalogProductEnabledIndexs = catalogProductEnabledIndexs;
 	}
 	
 	public EavAttributeSet getEavAttributeSet() {
@@ -484,70 +408,6 @@ public class CatalogProductEntity implements Serializable {
 		this.catalogProductEntityVarchars = catalogProductEntityVarchars;
 	}
 	
-	public CatalogProductFlat1 getCatalogProductFlat1() {
-		return this.catalogProductFlat1;
-	}
-
-	public void setCatalogProductFlat1(CatalogProductFlat1 catalogProductFlat1) {
-		this.catalogProductFlat1 = catalogProductFlat1;
-	}
-	
-	public CatalogProductFlat2 getCatalogProductFlat2() {
-		return this.catalogProductFlat2;
-	}
-
-	public void setCatalogProductFlat2(CatalogProductFlat2 catalogProductFlat2) {
-		this.catalogProductFlat2 = catalogProductFlat2;
-	}
-	
-	public CatalogProductFlat4 getCatalogProductFlat4() {
-		return this.catalogProductFlat4;
-	}
-
-	public void setCatalogProductFlat4(CatalogProductFlat4 catalogProductFlat4) {
-		this.catalogProductFlat4 = catalogProductFlat4;
-	}
-	
-	public CatalogProductFlat5 getCatalogProductFlat5() {
-		return this.catalogProductFlat5;
-	}
-
-	public void setCatalogProductFlat5(CatalogProductFlat5 catalogProductFlat5) {
-		this.catalogProductFlat5 = catalogProductFlat5;
-	}
-	
-	public Set<CatalogProductIndexEav> getCatalogProductIndexEavs() {
-		return this.catalogProductIndexEavs;
-	}
-
-	public void setCatalogProductIndexEavs(Set<CatalogProductIndexEav> catalogProductIndexEavs) {
-		this.catalogProductIndexEavs = catalogProductIndexEavs;
-	}
-	
-	public Set<CatalogProductIndexEavDecimal> getCatalogProductIndexEavDecimals() {
-		return this.catalogProductIndexEavDecimals;
-	}
-
-	public void setCatalogProductIndexEavDecimals(Set<CatalogProductIndexEavDecimal> catalogProductIndexEavDecimals) {
-		this.catalogProductIndexEavDecimals = catalogProductIndexEavDecimals;
-	}
-	
-	public Set<CatalogProductIndexPrice> getCatalogProductIndexPrices() {
-		return this.catalogProductIndexPrices;
-	}
-
-	public void setCatalogProductIndexPrices(Set<CatalogProductIndexPrice> catalogProductIndexPrices) {
-		this.catalogProductIndexPrices = catalogProductIndexPrices;
-	}
-	
-	public Set<CatalogProductIndexTierPrice> getCatalogProductIndexTierPrices() {
-		return this.catalogProductIndexTierPrices;
-	}
-
-	public void setCatalogProductIndexTierPrices(Set<CatalogProductIndexTierPrice> catalogProductIndexTierPrices) {
-		this.catalogProductIndexTierPrices = catalogProductIndexTierPrices;
-	}
-	
 	public Set<CatalogProductLink> getCatalogProductLinks1() {
 		return this.catalogProductLinks1;
 	}
@@ -620,30 +480,6 @@ public class CatalogProductEntity implements Serializable {
 		this.coreWebsites = coreWebsites;
 	}
 	
-	public Set<CatalogindexEav> getCatalogindexEavs() {
-		return this.catalogindexEavs;
-	}
-
-	public void setCatalogindexEavs(Set<CatalogindexEav> catalogindexEavs) {
-		this.catalogindexEavs = catalogindexEavs;
-	}
-	
-	public Set<CatalogindexMinimalPrice> getCatalogindexMinimalPrices() {
-		return this.catalogindexMinimalPrices;
-	}
-
-	public void setCatalogindexMinimalPrices(Set<CatalogindexMinimalPrice> catalogindexMinimalPrices) {
-		this.catalogindexMinimalPrices = catalogindexMinimalPrices;
-	}
-	
-//	public Set<CatalogindexPrice> getCatalogindexPrices() {
-//		return this.catalogindexPrices;
-//	}
-//
-//	public void setCatalogindexPrices(Set<CatalogindexPrice> catalogindexPrices) {
-//		this.catalogindexPrices = catalogindexPrices;
-//	}
-	
 	public Set<CataloginventoryStockItem> getCataloginventoryStockItems() {
 		return this.cataloginventoryStockItems;
 	}
@@ -676,13 +512,13 @@ public class CatalogProductEntity implements Serializable {
 		this.catalogruleProductPrices = catalogruleProductPrices;
 	}
 	
-	public Set<CatalogsearchResult> getCatalogsearchResults() {
-		return this.catalogsearchResults;
-	}
-
-	public void setCatalogsearchResults(Set<CatalogsearchResult> catalogsearchResults) {
-		this.catalogsearchResults = catalogsearchResults;
-	}
+//	public Set<CatalogsearchResult> getCatalogsearchResults() {
+//		return this.catalogsearchResults;
+//	}
+//
+//	public void setCatalogsearchResults(Set<CatalogsearchResult> catalogsearchResults) {
+//		this.catalogsearchResults = catalogsearchResults;
+//	}
 	
 	public Set<CoreUrlRewrite> getCoreUrlRewrites() {
 		return this.coreUrlRewrites;

@@ -18,15 +18,15 @@ public class CatalogCategoryProduct implements Serializable {
 
 	private int position;
 
-	//bi-directional many-to-one association to CatalogCategoryEntity
-    @ManyToOne
-	@JoinColumn(name="category_id")
-	private CatalogCategoryEntity catalogCategoryEntity;
-
-	//bi-directional many-to-one association to CatalogProductEntity
-    @ManyToOne
-	@JoinColumn(name="product_id")
-	private CatalogProductEntity catalogProductEntity;
+//	//bi-directional many-to-one association to CatalogCategoryEntity
+//    @ManyToOne
+//	@JoinColumn(name="category_id")
+//	private CatalogCategoryEntity catalogCategoryEntity;
+//
+//	//bi-directional many-to-one association to CatalogProductEntity
+//    @ManyToOne
+//	@JoinColumn(name="product_id")
+//	private CatalogProductEntity catalogProductEntity;
 
     public CatalogCategoryProduct() {
     }
@@ -47,20 +47,20 @@ public class CatalogCategoryProduct implements Serializable {
 		this.position = position;
 	}
 
-	public CatalogCategoryEntity getCatalogCategoryEntity() {
-		return this.catalogCategoryEntity;
-	}
-
-	public void setCatalogCategoryEntity(CatalogCategoryEntity catalogCategoryEntity) {
-		this.catalogCategoryEntity = catalogCategoryEntity;
-	}
-	
-	public CatalogProductEntity getCatalogProductEntity() {
-		return this.catalogProductEntity;
-	}
-
-	public void setCatalogProductEntity(CatalogProductEntity catalogProductEntity) {
-		this.catalogProductEntity = catalogProductEntity;
-	}
+//	public CatalogCategoryEntity getCatalogCategoryEntity() {
+//		return this.catalogCategoryEntity;
+//	}
+//
+//	public void setCatalogCategoryEntity(CatalogCategoryEntity catalogCategoryEntity) {
+//		this.catalogCategoryEntity = catalogCategoryEntity;
+//	}
+//	
+//	public CatalogProductEntity getCatalogProductEntity() {
+//		return this.catalogProductEntity;
+//	}
+//
+//	public void setCatalogProductEntity(CatalogProductEntity catalogProductEntity) {
+//		this.catalogProductEntity = catalogProductEntity;
+//	}
 	
 }

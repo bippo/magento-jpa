@@ -17,7 +17,7 @@ public class ImportexportImportdata implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 
-	private Object behavior;
+//	private Object behavior;
 
     @Lob()
 	private String data;
@@ -35,13 +35,13 @@ public class ImportexportImportdata implements Serializable {
 		this.id = id;
 	}
 
-	public Object getBehavior() {
-		return this.behavior;
-	}
-
-	public void setBehavior(Object behavior) {
-		this.behavior = behavior;
-	}
+//	public Object getBehavior() {
+//		return this.behavior;
+//	}
+//
+//	public void setBehavior(Object behavior) {
+//		this.behavior = behavior;
+//	}
 
 	public String getData() {
 		return this.data;

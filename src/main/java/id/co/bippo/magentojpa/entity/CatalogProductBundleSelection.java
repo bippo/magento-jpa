@@ -50,9 +50,9 @@ public class CatalogProductBundleSelection implements Serializable {
 	@JoinColumn(name="product_id")
 	private CatalogProductEntity catalogProductEntity;
 
-	//bi-directional many-to-one association to CatalogProductBundleSelectionPrice
-	@OneToMany(mappedBy="catalogProductBundleSelection")
-	private Set<CatalogProductBundleSelectionPrice> catalogProductBundleSelectionPrices;
+//	//bi-directional many-to-one association to CatalogProductBundleSelectionPrice
+//	@OneToMany(mappedBy="catalogProductBundleSelection")
+//	private Set<CatalogProductBundleSelectionPrice> catalogProductBundleSelectionPrices;
 
     public CatalogProductBundleSelection() {
     }
@@ -137,12 +137,12 @@ public class CatalogProductBundleSelection implements Serializable {
 		this.catalogProductEntity = catalogProductEntity;
 	}
 	
-	public Set<CatalogProductBundleSelectionPrice> getCatalogProductBundleSelectionPrices() {
-		return this.catalogProductBundleSelectionPrices;
-	}
-
-	public void setCatalogProductBundleSelectionPrices(Set<CatalogProductBundleSelectionPrice> catalogProductBundleSelectionPrices) {
-		this.catalogProductBundleSelectionPrices = catalogProductBundleSelectionPrices;
-	}
+//	public Set<CatalogProductBundleSelectionPrice> getCatalogProductBundleSelectionPrices() {
+//		return this.catalogProductBundleSelectionPrices;
+//	}
+//
+//	public void setCatalogProductBundleSelectionPrices(Set<CatalogProductBundleSelectionPrice> catalogProductBundleSelectionPrices) {
+//		this.catalogProductBundleSelectionPrices = catalogProductBundleSelectionPrices;
+//	}
 	
 }

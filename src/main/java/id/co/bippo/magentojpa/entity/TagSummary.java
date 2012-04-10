@@ -30,15 +30,15 @@ public class TagSummary implements Serializable {
 
 	private int uses;
 
-	//bi-directional many-to-one association to CoreStore
-    @ManyToOne
-	@JoinColumn(name="store_id")
-	private CoreStore coreStore;
-
-	//bi-directional many-to-one association to Tag
-    @ManyToOne
-	@JoinColumn(name="tag_id")
-	private Tag tag;
+//	//bi-directional many-to-one association to CoreStore
+//    @ManyToOne
+//	@JoinColumn(name="store_id")
+//	private CoreStore coreStore;
+//
+//	//bi-directional many-to-one association to Tag
+//    @ManyToOne
+//	@JoinColumn(name="tag_id")
+//	private Tag tag;
 
     public TagSummary() {
     }
@@ -99,20 +99,20 @@ public class TagSummary implements Serializable {
 		this.uses = uses;
 	}
 
-	public CoreStore getCoreStore() {
-		return this.coreStore;
-	}
-
-	public void setCoreStore(CoreStore coreStore) {
-		this.coreStore = coreStore;
-	}
-	
-	public Tag getTag() {
-		return this.tag;
-	}
-
-	public void setTag(Tag tag) {
-		this.tag = tag;
-	}
+//	public CoreStore getCoreStore() {
+//		return this.coreStore;
+//	}
+//
+//	public void setCoreStore(CoreStore coreStore) {
+//		this.coreStore = coreStore;
+//	}
+//	
+//	public Tag getTag() {
+//		return this.tag;
+//	}
+//
+//	public void setTag(Tag tag) {
+//		this.tag = tag;
+//	}
 	
 }

@@ -31,9 +31,9 @@ public class CatalogProductEntityMediaGallery implements Serializable {
 	@JoinColumn(name="entity_id")
 	private CatalogProductEntity catalogProductEntity;
 
-	//bi-directional many-to-one association to CatalogProductEntityMediaGalleryValue
-	@OneToMany(mappedBy="catalogProductEntityMediaGallery")
-	private Set<CatalogProductEntityMediaGalleryValue> catalogProductEntityMediaGalleryValues;
+//	//bi-directional many-to-one association to CatalogProductEntityMediaGalleryValue
+//	@OneToMany(mappedBy="catalogProductEntityMediaGallery")
+//	private Set<CatalogProductEntityMediaGalleryValue> catalogProductEntityMediaGalleryValues;
 
     public CatalogProductEntityMediaGallery() {
     }
@@ -70,12 +70,12 @@ public class CatalogProductEntityMediaGallery implements Serializable {
 		this.catalogProductEntity = catalogProductEntity;
 	}
 	
-	public Set<CatalogProductEntityMediaGalleryValue> getCatalogProductEntityMediaGalleryValues() {
-		return this.catalogProductEntityMediaGalleryValues;
-	}
-
-	public void setCatalogProductEntityMediaGalleryValues(Set<CatalogProductEntityMediaGalleryValue> catalogProductEntityMediaGalleryValues) {
-		this.catalogProductEntityMediaGalleryValues = catalogProductEntityMediaGalleryValues;
-	}
+//	public Set<CatalogProductEntityMediaGalleryValue> getCatalogProductEntityMediaGalleryValues() {
+//		return this.catalogProductEntityMediaGalleryValues;
+//	}
+//
+//	public void setCatalogProductEntityMediaGalleryValues(Set<CatalogProductEntityMediaGalleryValue> catalogProductEntityMediaGalleryValues) {
+//		this.catalogProductEntityMediaGalleryValues = catalogProductEntityMediaGalleryValues;
+//	}
 	
 }

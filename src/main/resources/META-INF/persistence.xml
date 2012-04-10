@@ -14,42 +14,21 @@
     <class>id.co.bippo.magentojpa.entity.ApiRule</class>
 <!--     <class>id.co.bippo.magentojpa.entity.ApiSession</class> -->
     <class>id.co.bippo.magentojpa.entity.ApiUser</class>
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogCategoryAncCategsIndexIdx</class> -->
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogCategoryAncCategsIndexTmp</class> -->
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogCategoryAncProductsIndexIdx</class> -->
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogCategoryAncProductsIndexTmp</class> -->
     <class>id.co.bippo.magentojpa.entity.CatalogCategoryEntity</class>
     <class>id.co.bippo.magentojpa.entity.CatalogCategoryEntityDatetime</class>
     <class>id.co.bippo.magentojpa.entity.CatalogCategoryEntityDecimal</class>
     <class>id.co.bippo.magentojpa.entity.CatalogCategoryEntityInt</class>
     <class>id.co.bippo.magentojpa.entity.CatalogCategoryEntityText</class>
     <class>id.co.bippo.magentojpa.entity.CatalogCategoryEntityVarchar</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogCategoryFlatStore1</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogCategoryFlatStore2</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogCategoryFlatStore3</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogCategoryFlatStore4</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogCategoryFlatStore5</class>
     <class>id.co.bippo.magentojpa.entity.CatalogCategoryProduct</class>
     <class>id.co.bippo.magentojpa.entity.CatalogCategoryProductPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogCategoryProductIndex</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogCategoryProductIndexPK</class>
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogCategoryProductIndexEnblIdx</class> -->
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogCategoryProductIndexEnblTmp</class> -->
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogCategoryProductIndexIdx</class> -->
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogCategoryProductIndexTmp</class> -->
     <class>id.co.bippo.magentojpa.entity.CatalogCompareItem</class>
     <class>id.co.bippo.magentojpa.entity.CatalogEavAttribute</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductBundleOption</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductBundleOptionValue</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductBundlePriceIndex</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductBundlePriceIndexPK</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductBundleSelection</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductBundleSelectionPrice</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductBundleSelectionPricePK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductBundleStockIndex</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductBundleStockIndexPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductEnabledIndex</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductEnabledIndexPK</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductEntity</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductEntityDatetime</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductEntityDecimal</class>
@@ -61,67 +40,6 @@
     <class>id.co.bippo.magentojpa.entity.CatalogProductEntityText</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductEntityTierPrice</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductEntityVarchar</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductFlat1</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductFlat2</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductFlat4</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductFlat5</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEav</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavDecimal</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavDecimalPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavDecimalIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavDecimalIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavDecimalTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavDecimalTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexEavTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPrice</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPricePK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleOptIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleOptIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleOptTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleOptTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleSelIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleSelIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleSelTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleSelTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceBundleTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceCfgOptAgrIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceCfgOptAgrIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceCfgOptAgrTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceCfgOptAgrTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceCfgOptIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceCfgOptIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceCfgOptTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceCfgOptTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceDownlodIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceDownlodIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceDownlodTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceDownlodTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceFinalIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceFinalIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceFinalTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceFinalTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceOptAgrIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceOptAgrIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceOptAgrTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceOptAgrTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceOptIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceOptIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceOptTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceOptTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexPriceTmpPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexTierPrice</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexTierPricePK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogProductIndexWebsite</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductLink</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductLinkAttribute</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductLinkAttributeDecimal</class>
@@ -138,20 +56,10 @@
     <class>id.co.bippo.magentojpa.entity.CatalogProductSuperAttributeLabel</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductSuperAttributePricing</class>
     <class>id.co.bippo.magentojpa.entity.CatalogProductSuperLink</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogindexAggregation</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogindexAggregationTag</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogindexEav</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogindexEavPK</class>
-    <class>id.co.bippo.magentojpa.entity.CatalogindexMinimalPrice</class>
-<!--     <class>id.co.bippo.magentojpa.entity.CatalogindexPrice</class> -->
     <class>id.co.bippo.magentojpa.entity.CataloginventoryStock</class>
     <class>id.co.bippo.magentojpa.entity.CataloginventoryStockItem</class>
     <class>id.co.bippo.magentojpa.entity.CataloginventoryStockStatus</class>
     <class>id.co.bippo.magentojpa.entity.CataloginventoryStockStatusPK</class>
-    <class>id.co.bippo.magentojpa.entity.CataloginventoryStockStatusIdx</class>
-    <class>id.co.bippo.magentojpa.entity.CataloginventoryStockStatusIdxPK</class>
-    <class>id.co.bippo.magentojpa.entity.CataloginventoryStockStatusTmp</class>
-    <class>id.co.bippo.magentojpa.entity.CataloginventoryStockStatusTmpPK</class>
     <class>id.co.bippo.magentojpa.entity.Catalogrule</class>
     <class>id.co.bippo.magentojpa.entity.CatalogruleAffectedProduct</class>
     <class>id.co.bippo.magentojpa.entity.CatalogruleGroupWebsite</class>

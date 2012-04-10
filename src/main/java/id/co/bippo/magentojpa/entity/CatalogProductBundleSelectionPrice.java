@@ -24,14 +24,14 @@ public class CatalogProductBundleSelectionPrice implements Serializable {
 	private BigDecimal selectionPriceValue;
 
 	//bi-directional many-to-one association to CoreWebsite
-    @ManyToOne
-	@JoinColumn(name="website_id")
-	private CoreWebsite coreWebsite;
-
-	//bi-directional many-to-one association to CatalogProductBundleSelection
-    @ManyToOne
-	@JoinColumn(name="selection_id")
-	private CatalogProductBundleSelection catalogProductBundleSelection;
+//    @ManyToOne
+//	@JoinColumn(name="website_id")
+//	private CoreWebsite coreWebsite;
+//
+//	//bi-directional many-to-one association to CatalogProductBundleSelection
+//    @ManyToOne
+//	@JoinColumn(name="selection_id")
+//	private CatalogProductBundleSelection catalogProductBundleSelection;
 
     public CatalogProductBundleSelectionPrice() {
     }
@@ -60,20 +60,20 @@ public class CatalogProductBundleSelectionPrice implements Serializable {
 		this.selectionPriceValue = selectionPriceValue;
 	}
 
-	public CoreWebsite getCoreWebsite() {
-		return this.coreWebsite;
-	}
-
-	public void setCoreWebsite(CoreWebsite coreWebsite) {
-		this.coreWebsite = coreWebsite;
-	}
-	
-	public CatalogProductBundleSelection getCatalogProductBundleSelection() {
-		return this.catalogProductBundleSelection;
-	}
-
-	public void setCatalogProductBundleSelection(CatalogProductBundleSelection catalogProductBundleSelection) {
-		this.catalogProductBundleSelection = catalogProductBundleSelection;
-	}
+//	public CoreWebsite getCoreWebsite() {
+//		return this.coreWebsite;
+//	}
+//
+//	public void setCoreWebsite(CoreWebsite coreWebsite) {
+//		this.coreWebsite = coreWebsite;
+//	}
+//	
+//	public CatalogProductBundleSelection getCatalogProductBundleSelection() {
+//		return this.catalogProductBundleSelection;
+//	}
+//
+//	public void setCatalogProductBundleSelection(CatalogProductBundleSelection catalogProductBundleSelection) {
+//		this.catalogProductBundleSelection = catalogProductBundleSelection;
+//	}
 	
 }

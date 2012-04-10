@@ -50,9 +50,9 @@ public class CatalogsearchQuery implements Serializable {
 	@JoinColumn(name="store_id")
 	private CoreStore coreStore;
 
-	//bi-directional many-to-one association to CatalogsearchResult
-	@OneToMany(mappedBy="catalogsearchQuery")
-	private Set<CatalogsearchResult> catalogsearchResults;
+//	//bi-directional many-to-one association to CatalogsearchResult
+//	@OneToMany(mappedBy="catalogsearchQuery")
+//	private Set<CatalogsearchResult> catalogsearchResults;
 
     public CatalogsearchQuery() {
     }
@@ -145,12 +145,12 @@ public class CatalogsearchQuery implements Serializable {
 		this.coreStore = coreStore;
 	}
 	
-	public Set<CatalogsearchResult> getCatalogsearchResults() {
-		return this.catalogsearchResults;
-	}
-
-	public void setCatalogsearchResults(Set<CatalogsearchResult> catalogsearchResults) {
-		this.catalogsearchResults = catalogsearchResults;
-	}
+//	public Set<CatalogsearchResult> getCatalogsearchResults() {
+//		return this.catalogsearchResults;
+//	}
+//
+//	public void setCatalogsearchResults(Set<CatalogsearchResult> catalogsearchResults) {
+//		this.catalogsearchResults = catalogsearchResults;
+//	}
 	
 }

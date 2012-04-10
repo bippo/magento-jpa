@@ -27,9 +27,9 @@ public class DirectoryCountryRegion implements Serializable {
 	@Column(name="default_name")
 	private String defaultName;
 
-	//bi-directional many-to-one association to DirectoryCountryRegionName
-	@OneToMany(mappedBy="directoryCountryRegion")
-	private Set<DirectoryCountryRegionName> directoryCountryRegionNames;
+//	//bi-directional many-to-one association to DirectoryCountryRegionName
+//	@OneToMany(mappedBy="directoryCountryRegion")
+//	private Set<DirectoryCountryRegionName> directoryCountryRegionNames;
 
     public DirectoryCountryRegion() {
     }
@@ -66,12 +66,12 @@ public class DirectoryCountryRegion implements Serializable {
 		this.defaultName = defaultName;
 	}
 
-	public Set<DirectoryCountryRegionName> getDirectoryCountryRegionNames() {
-		return this.directoryCountryRegionNames;
-	}
-
-	public void setDirectoryCountryRegionNames(Set<DirectoryCountryRegionName> directoryCountryRegionNames) {
-		this.directoryCountryRegionNames = directoryCountryRegionNames;
-	}
+//	public Set<DirectoryCountryRegionName> getDirectoryCountryRegionNames() {
+//		return this.directoryCountryRegionNames;
+//	}
+//
+//	public void setDirectoryCountryRegionNames(Set<DirectoryCountryRegionName> directoryCountryRegionNames) {
+//		this.directoryCountryRegionNames = directoryCountryRegionNames;
+//	}
 	
 }

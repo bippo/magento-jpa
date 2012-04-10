@@ -33,9 +33,9 @@ public class EavFormFieldset implements Serializable {
 	@JoinColumn(name="type_id")
 	private EavFormType eavFormType;
 
-	//bi-directional many-to-one association to EavFormFieldsetLabel
-	@OneToMany(mappedBy="eavFormFieldset")
-	private Set<EavFormFieldsetLabel> eavFormFieldsetLabels;
+//	//bi-directional many-to-one association to EavFormFieldsetLabel
+//	@OneToMany(mappedBy="eavFormFieldset")
+//	private Set<EavFormFieldsetLabel> eavFormFieldsetLabels;
 
     public EavFormFieldset() {
     }
@@ -80,12 +80,12 @@ public class EavFormFieldset implements Serializable {
 		this.eavFormType = eavFormType;
 	}
 	
-	public Set<EavFormFieldsetLabel> getEavFormFieldsetLabels() {
-		return this.eavFormFieldsetLabels;
-	}
-
-	public void setEavFormFieldsetLabels(Set<EavFormFieldsetLabel> eavFormFieldsetLabels) {
-		this.eavFormFieldsetLabels = eavFormFieldsetLabels;
-	}
+//	public Set<EavFormFieldsetLabel> getEavFormFieldsetLabels() {
+//		return this.eavFormFieldsetLabels;
+//	}
+//
+//	public void setEavFormFieldsetLabels(Set<EavFormFieldsetLabel> eavFormFieldsetLabels) {
+//		this.eavFormFieldsetLabels = eavFormFieldsetLabels;
+//	}
 	
 }
