@@ -5,14 +5,17 @@
 <h:head>
 </h:head>
 <h:body>
-	<p:dataTable value="#{productView.productsUntyped}" var="product">
-		<p:column headerText="ID">
-			#{product[0]}
-		</p:column>
-		<p:column headerText="SKU">
-			#{product[4]}
-		</p:column>
-	</p:dataTable>
+	<h:form id="productData">
+		<p:dataTable value="#{productView.productsUntyped}" var="product"
+			scrollable="true" scrollHeight="400" liveScroll="true" scrollRows="50">
+			<p:column headerText="ID" style="width: 150px">
+				#{product[0]}
+			</p:column>
+			<p:column headerText="SKU" style="width: 250px">
+				#{product[1]}
+			</p:column>
+		</p:dataTable>
+	</h:form>
 </h:body>
 
 </html>
