@@ -202,8 +202,8 @@ public class CatalogProductEntity implements Serializable {
 	private Set<CatalogindexMinimalPrice> catalogindexMinimalPrices;
 
 	//bi-directional many-to-one association to CatalogindexPrice
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<CatalogindexPrice> catalogindexPrices;
+//	@OneToMany(mappedBy="catalogProductEntity")
+//	private Set<CatalogindexPrice> catalogindexPrices;
 
 	//bi-directional many-to-one association to CataloginventoryStockItem
 	@OneToMany(mappedBy="catalogProductEntity")
@@ -278,8 +278,8 @@ public class CatalogProductEntity implements Serializable {
 	private Set<TagRelation> tagRelations;
 
 	//bi-directional many-to-one association to WeeeDiscount
-	@OneToMany(mappedBy="catalogProductEntity")
-	private Set<WeeeDiscount> weeeDiscounts;
+//	@OneToMany(mappedBy="catalogProductEntity")
+//	private Set<WeeeDiscount> weeeDiscounts;
 
 	//bi-directional many-to-one association to WeeeTax
 	@OneToMany(mappedBy="catalogProductEntity")
@@ -636,13 +636,13 @@ public class CatalogProductEntity implements Serializable {
 		this.catalogindexMinimalPrices = catalogindexMinimalPrices;
 	}
 	
-	public Set<CatalogindexPrice> getCatalogindexPrices() {
-		return this.catalogindexPrices;
-	}
-
-	public void setCatalogindexPrices(Set<CatalogindexPrice> catalogindexPrices) {
-		this.catalogindexPrices = catalogindexPrices;
-	}
+//	public Set<CatalogindexPrice> getCatalogindexPrices() {
+//		return this.catalogindexPrices;
+//	}
+//
+//	public void setCatalogindexPrices(Set<CatalogindexPrice> catalogindexPrices) {
+//		this.catalogindexPrices = catalogindexPrices;
+//	}
 	
 	public Set<CataloginventoryStockItem> getCataloginventoryStockItems() {
 		return this.cataloginventoryStockItems;
@@ -788,13 +788,13 @@ public class CatalogProductEntity implements Serializable {
 		this.tagRelations = tagRelations;
 	}
 	
-	public Set<WeeeDiscount> getWeeeDiscounts() {
-		return this.weeeDiscounts;
-	}
-
-	public void setWeeeDiscounts(Set<WeeeDiscount> weeeDiscounts) {
-		this.weeeDiscounts = weeeDiscounts;
-	}
+//	public Set<WeeeDiscount> getWeeeDiscounts() {
+//		return this.weeeDiscounts;
+//	}
+//
+//	public void setWeeeDiscounts(Set<WeeeDiscount> weeeDiscounts) {
+//		this.weeeDiscounts = weeeDiscounts;
+//	}
 	
 	public Set<WeeeTax> getWeeeTaxs() {
 		return this.weeeTaxs;
