@@ -262,7 +262,6 @@
     <class>id.co.bippo.magentojpa.entity.Salesrule</class>
     <class>id.co.bippo.magentojpa.entity.SalesruleCoupon</class>
     <class>id.co.bippo.magentojpa.entity.SalesruleCouponUsage</class>
-    <class>id.co.bippo.magentojpa.entity.SalesruleCouponUsagePK</class>
     <class>id.co.bippo.magentojpa.entity.SalesruleCustomer</class>
     <class>id.co.bippo.magentojpa.entity.SalesruleLabel</class>
     <class>id.co.bippo.magentojpa.entity.SalesruleProductAttribute</class>
@@ -298,7 +297,7 @@
     <class>id.co.bippo.magentojpa.entity.XmlconnectQueue</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
-      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+<!--       <property name="hibernate.hbm2ddl.auto" value="create-drop"/> -->
       <property name="hibernate.show_sql" value="true"/>
       <property name="hibernate.format_sql" value="true"/>
       <property name="hibernate.transaction.flush_before_completion" value="true"/>

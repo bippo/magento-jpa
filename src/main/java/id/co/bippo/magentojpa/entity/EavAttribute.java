@@ -193,9 +193,9 @@ public class EavAttribute implements Serializable {
 	@OneToMany(mappedBy="eavAttribute")
 	private Set<GooglebaseAttribute> googlebaseAttributes;
 
-	//bi-directional many-to-one association to SalesruleProductAttribute
-	@OneToMany(mappedBy="eavAttribute")
-	private Set<SalesruleProductAttribute> salesruleProductAttributes;
+//	//bi-directional many-to-one association to SalesruleProductAttribute
+//	@OneToMany(mappedBy="eavAttribute")
+//	private Set<SalesruleProductAttribute> salesruleProductAttributes;
 
 	//bi-directional many-to-one association to WeeeTax
 	@OneToMany(mappedBy="eavAttribute")
@@ -588,13 +588,13 @@ public class EavAttribute implements Serializable {
 		this.googlebaseAttributes = googlebaseAttributes;
 	}
 	
-	public Set<SalesruleProductAttribute> getSalesruleProductAttributes() {
-		return this.salesruleProductAttributes;
-	}
-
-	public void setSalesruleProductAttributes(Set<SalesruleProductAttribute> salesruleProductAttributes) {
-		this.salesruleProductAttributes = salesruleProductAttributes;
-	}
+//	public Set<SalesruleProductAttribute> getSalesruleProductAttributes() {
+//		return this.salesruleProductAttributes;
+//	}
+//
+//	public void setSalesruleProductAttributes(Set<SalesruleProductAttribute> salesruleProductAttributes) {
+//		this.salesruleProductAttributes = salesruleProductAttributes;
+//	}
 	
 	public Set<WeeeTax> getWeeeTaxs() {
 		return this.weeeTaxs;

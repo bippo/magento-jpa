@@ -74,9 +74,9 @@ public class Catalogrule implements Serializable {
 	@Column(name="website_ids")
 	private String websiteIds;
 
-	//bi-directional many-to-one association to CatalogruleGroupWebsite
-	@OneToMany(mappedBy="catalogrule")
-	private Set<CatalogruleGroupWebsite> catalogruleGroupWebsites;
+//	//bi-directional many-to-one association to CatalogruleGroupWebsite
+//	@OneToMany(mappedBy="catalogrule")
+//	private Set<CatalogruleGroupWebsite> catalogruleGroupWebsites;
 
 	//bi-directional many-to-one association to CatalogruleProduct
 	@OneToMany(mappedBy="catalogrule")
@@ -221,13 +221,13 @@ public class Catalogrule implements Serializable {
 		this.websiteIds = websiteIds;
 	}
 
-	public Set<CatalogruleGroupWebsite> getCatalogruleGroupWebsites() {
-		return this.catalogruleGroupWebsites;
-	}
-
-	public void setCatalogruleGroupWebsites(Set<CatalogruleGroupWebsite> catalogruleGroupWebsites) {
-		this.catalogruleGroupWebsites = catalogruleGroupWebsites;
-	}
+//	public Set<CatalogruleGroupWebsite> getCatalogruleGroupWebsites() {
+//		return this.catalogruleGroupWebsites;
+//	}
+//
+//	public void setCatalogruleGroupWebsites(Set<CatalogruleGroupWebsite> catalogruleGroupWebsites) {
+//		this.catalogruleGroupWebsites = catalogruleGroupWebsites;
+//	}
 	
 	public Set<CatalogruleProduct> getCatalogruleProducts() {
 		return this.catalogruleProducts;

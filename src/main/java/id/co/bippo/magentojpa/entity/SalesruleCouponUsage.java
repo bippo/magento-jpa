@@ -1,7 +1,14 @@
 package id.co.bippo.magentojpa.entity;
 
 import java.io.Serializable;
-import javax.persistence.*;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 
 /**
@@ -10,35 +17,39 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="salesrule_coupon_usage")
+@IdClass(SalesruleCouponUsagePK.class)
 public class SalesruleCouponUsage implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@EmbeddedId
-	private SalesruleCouponUsagePK id;
+//	@EmbeddedId
+//	@Id
+//	private SalesruleCouponUsagePK id;
 
 	@Column(name="times_used")
 	private int timesUsed;
 
 	//bi-directional many-to-one association to SalesruleCoupon
+	@Id
     @ManyToOne
 	@JoinColumn(name="coupon_id")
-	private SalesruleCoupon salesruleCoupon;
+	private SalesruleCoupon coupon;
 
 	//bi-directional many-to-one association to CustomerEntity
+	@Id
     @ManyToOne
 	@JoinColumn(name="customer_id")
-	private CustomerEntity customerEntity;
+	private CustomerEntity customer;
 
     public SalesruleCouponUsage() {
     }
 
-	public SalesruleCouponUsagePK getId() {
-		return this.id;
-	}
-
-	public void setId(SalesruleCouponUsagePK id) {
-		this.id = id;
-	}
+//	public SalesruleCouponUsagePK getId() {
+//		return this.id;
+//	}
+//
+//	public void setId(SalesruleCouponUsagePK id) {
+//		this.id = id;
+//	}
 	
 	public int getTimesUsed() {
 		return this.timesUsed;
@@ -48,20 +59,20 @@ public class SalesruleCouponUsage implements Serializable {
 		this.timesUsed = timesUsed;
 	}
 
-	public SalesruleCoupon getSalesruleCoupon() {
-		return this.salesruleCoupon;
+	public SalesruleCoupon getCoupon() {
+		return this.coupon;
 	}
 
-	public void setSalesruleCoupon(SalesruleCoupon salesruleCoupon) {
-		this.salesruleCoupon = salesruleCoupon;
+	public void setCoupon(SalesruleCoupon salesruleCoupon) {
+		this.coupon = salesruleCoupon;
 	}
 	
-	public CustomerEntity getCustomerEntity() {
-		return this.customerEntity;
+	public CustomerEntity getCustomer() {
+		return this.customer;
 	}
 
-	public void setCustomerEntity(CustomerEntity customerEntity) {
-		this.customerEntity = customerEntity;
+	public void setCustomer(CustomerEntity customerEntity) {
+		this.customer = customerEntity;
 	}
 	
 }

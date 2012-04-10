@@ -22,20 +22,20 @@ public class CataloginventoryStockStatus implements Serializable {
 	@Column(name="stock_status")
 	private int stockStatus;
 
-	//bi-directional many-to-one association to CatalogProductEntity
-    @ManyToOne
-	@JoinColumn(name="product_id")
-	private CatalogProductEntity catalogProductEntity;
-
-	//bi-directional many-to-one association to CataloginventoryStock
-    @ManyToOne
-	@JoinColumn(name="stock_id")
-	private CataloginventoryStock cataloginventoryStock;
-
-	//bi-directional many-to-one association to CoreWebsite
-    @ManyToOne
-	@JoinColumn(name="website_id")
-	private CoreWebsite coreWebsite;
+//	//bi-directional many-to-one association to CatalogProductEntity
+//    @ManyToOne
+//	@JoinColumn(name="product_id")
+//	private CatalogProductEntity catalogProductEntity;
+//
+//	//bi-directional many-to-one association to CataloginventoryStock
+//    @ManyToOne
+//	@JoinColumn(name="stock_id")
+//	private CataloginventoryStock cataloginventoryStock;
+//
+//	//bi-directional many-to-one association to CoreWebsite
+//    @ManyToOne
+//	@JoinColumn(name="website_id")
+//	private CoreWebsite coreWebsite;
 
     public CataloginventoryStockStatus() {
     }
@@ -64,28 +64,28 @@ public class CataloginventoryStockStatus implements Serializable {
 		this.stockStatus = stockStatus;
 	}
 
-	public CatalogProductEntity getCatalogProductEntity() {
-		return this.catalogProductEntity;
-	}
-
-	public void setCatalogProductEntity(CatalogProductEntity catalogProductEntity) {
-		this.catalogProductEntity = catalogProductEntity;
-	}
-	
-	public CataloginventoryStock getCataloginventoryStock() {
-		return this.cataloginventoryStock;
-	}
-
-	public void setCataloginventoryStock(CataloginventoryStock cataloginventoryStock) {
-		this.cataloginventoryStock = cataloginventoryStock;
-	}
-	
-	public CoreWebsite getCoreWebsite() {
-		return this.coreWebsite;
-	}
-
-	public void setCoreWebsite(CoreWebsite coreWebsite) {
-		this.coreWebsite = coreWebsite;
-	}
+//	public CatalogProductEntity getCatalogProductEntity() {
+//		return this.catalogProductEntity;
+//	}
+//
+//	public void setCatalogProductEntity(CatalogProductEntity catalogProductEntity) {
+//		this.catalogProductEntity = catalogProductEntity;
+//	}
+//	
+//	public CataloginventoryStock getCataloginventoryStock() {
+//		return this.cataloginventoryStock;
+//	}
+//
+//	public void setCataloginventoryStock(CataloginventoryStock cataloginventoryStock) {
+//		this.cataloginventoryStock = cataloginventoryStock;
+//	}
+//	
+//	public CoreWebsite getCoreWebsite() {
+//		return this.coreWebsite;
+//	}
+//
+//	public void setCoreWebsite(CoreWebsite coreWebsite) {
+//		this.coreWebsite = coreWebsite;
+//	}
 	
 }

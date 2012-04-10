@@ -126,7 +126,7 @@ public class CustomerEntity implements Serializable {
 	private Set<SalesRecurringProfile> salesRecurringProfiles;
 
 	//bi-directional many-to-one association to SalesruleCouponUsage
-	@OneToMany(mappedBy="customerEntity")
+	@OneToMany(mappedBy="customer")
 	private Set<SalesruleCouponUsage> salesruleCouponUsages;
 
 	//bi-directional many-to-one association to SalesruleCustomer

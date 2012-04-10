@@ -43,7 +43,7 @@ public class SalesruleCoupon implements Serializable {
 	private Salesrule salesrule;
 
 	//bi-directional many-to-one association to SalesruleCouponUsage
-	@OneToMany(mappedBy="salesruleCoupon")
+	@OneToMany(mappedBy="coupon")
 	private Set<SalesruleCouponUsage> salesruleCouponUsages;
 
     public SalesruleCoupon() {

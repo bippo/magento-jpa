@@ -7,30 +7,30 @@ import javax.persistence.*;
  * The primary key class for the salesrule_coupon_usage database table.
  * 
  */
-@Embeddable
+//@Embeddable
 public class SalesruleCouponUsagePK implements Serializable {
 	//default serial version id, required for serializable classes.
 	private static final long serialVersionUID = 1L;
 
 	@Column(name="coupon_id")
-	private int couponId;
+	private int coupon;
 
 	@Column(name="customer_id")
-	private int customerId;
+	private int customer;
 
     public SalesruleCouponUsagePK() {
     }
-	public int getCouponId() {
-		return this.couponId;
+	public int getCoupon() {
+		return this.coupon;
 	}
-	public void setCouponId(int couponId) {
-		this.couponId = couponId;
+	public void setCoupon(int couponId) {
+		this.coupon = couponId;
 	}
-	public int getCustomerId() {
-		return this.customerId;
+	public int getCustomer() {
+		return this.customer;
 	}
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
+	public void setCustomer(int customerId) {
+		this.customer = customerId;
 	}
 
 	public boolean equals(Object other) {
@@ -42,16 +42,16 @@ public class SalesruleCouponUsagePK implements Serializable {
 		}
 		SalesruleCouponUsagePK castOther = (SalesruleCouponUsagePK)other;
 		return 
-			(this.couponId == castOther.couponId)
-			&& (this.customerId == castOther.customerId);
+			(this.coupon == castOther.coupon)
+			&& (this.customer == castOther.customer);
 
     }
     
 	public int hashCode() {
 		final int prime = 31;
 		int hash = 17;
-		hash = hash * prime + this.couponId;
-		hash = hash * prime + this.customerId;
+		hash = hash * prime + this.coupon;
+		hash = hash * prime + this.customer;
 		
 		return hash;
     }

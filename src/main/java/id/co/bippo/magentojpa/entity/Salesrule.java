@@ -108,9 +108,9 @@ public class Salesrule implements Serializable {
 	@OneToMany(mappedBy="salesrule")
 	private Set<SalesruleLabel> salesruleLabels;
 
-	//bi-directional many-to-one association to SalesruleProductAttribute
-	@OneToMany(mappedBy="salesrule")
-	private Set<SalesruleProductAttribute> salesruleProductAttributes;
+//	//bi-directional many-to-one association to SalesruleProductAttribute
+//	@OneToMany(mappedBy="salesrule")
+//	private Set<SalesruleProductAttribute> salesruleProductAttributes;
 
     public Salesrule() {
     }
@@ -331,12 +331,12 @@ public class Salesrule implements Serializable {
 		this.salesruleLabels = salesruleLabels;
 	}
 	
-	public Set<SalesruleProductAttribute> getSalesruleProductAttributes() {
-		return this.salesruleProductAttributes;
-	}
-
-	public void setSalesruleProductAttributes(Set<SalesruleProductAttribute> salesruleProductAttributes) {
-		this.salesruleProductAttributes = salesruleProductAttributes;
-	}
+//	public Set<SalesruleProductAttribute> getSalesruleProductAttributes() {
+//		return this.salesruleProductAttributes;
+//	}
+//
+//	public void setSalesruleProductAttributes(Set<SalesruleProductAttribute> salesruleProductAttributes) {
+//		this.salesruleProductAttributes = salesruleProductAttributes;
+//	}
 	
 }

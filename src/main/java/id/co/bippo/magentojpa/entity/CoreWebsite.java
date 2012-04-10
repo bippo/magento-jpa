@@ -48,13 +48,13 @@ public class CoreWebsite implements Serializable {
 	@ManyToMany(mappedBy="coreWebsites")
 	private Set<CatalogProductEntity> catalogProductEntities;
 
-	//bi-directional many-to-one association to CataloginventoryStockStatus
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CataloginventoryStockStatus> cataloginventoryStockStatuses;
+//	//bi-directional many-to-one association to CataloginventoryStockStatus
+//	@OneToMany(mappedBy="coreWebsite")
+//	private Set<CataloginventoryStockStatus> cataloginventoryStockStatuses;
 
-	//bi-directional many-to-one association to CatalogruleGroupWebsite
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CatalogruleGroupWebsite> catalogruleGroupWebsites;
+//	//bi-directional many-to-one association to CatalogruleGroupWebsite
+//	@OneToMany(mappedBy="coreWebsite")
+//	private Set<CatalogruleGroupWebsite> catalogruleGroupWebsites;
 
 	//bi-directional many-to-one association to CatalogruleProduct
 	@OneToMany(mappedBy="coreWebsite")
@@ -100,9 +100,9 @@ public class CoreWebsite implements Serializable {
 	@OneToMany(mappedBy="coreWebsite")
 	private Set<ProductAlertStock> productAlertStocks;
 
-	//bi-directional many-to-one association to SalesruleProductAttribute
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<SalesruleProductAttribute> salesruleProductAttributes;
+//	//bi-directional many-to-one association to SalesruleProductAttribute
+//	@OneToMany(mappedBy="coreWebsite")
+//	private Set<SalesruleProductAttribute> salesruleProductAttributes;
 
 	//bi-directional many-to-one association to WeeeDiscount
 //	@OneToMany(mappedBy="coreWebsite")
@@ -195,21 +195,21 @@ public class CoreWebsite implements Serializable {
 		this.catalogProductEntities = catalogProductEntities;
 	}
 	
-	public Set<CataloginventoryStockStatus> getCataloginventoryStockStatuses() {
-		return this.cataloginventoryStockStatuses;
-	}
-
-	public void setCataloginventoryStockStatuses(Set<CataloginventoryStockStatus> cataloginventoryStockStatuses) {
-		this.cataloginventoryStockStatuses = cataloginventoryStockStatuses;
-	}
+//	public Set<CataloginventoryStockStatus> getCataloginventoryStockStatuses() {
+//		return this.cataloginventoryStockStatuses;
+//	}
+//
+//	public void setCataloginventoryStockStatuses(Set<CataloginventoryStockStatus> cataloginventoryStockStatuses) {
+//		this.cataloginventoryStockStatuses = cataloginventoryStockStatuses;
+//	}
 	
-	public Set<CatalogruleGroupWebsite> getCatalogruleGroupWebsites() {
-		return this.catalogruleGroupWebsites;
-	}
-
-	public void setCatalogruleGroupWebsites(Set<CatalogruleGroupWebsite> catalogruleGroupWebsites) {
-		this.catalogruleGroupWebsites = catalogruleGroupWebsites;
-	}
+//	public Set<CatalogruleGroupWebsite> getCatalogruleGroupWebsites() {
+//		return this.catalogruleGroupWebsites;
+//	}
+//
+//	public void setCatalogruleGroupWebsites(Set<CatalogruleGroupWebsite> catalogruleGroupWebsites) {
+//		this.catalogruleGroupWebsites = catalogruleGroupWebsites;
+//	}
 	
 	public Set<CatalogruleProduct> getCatalogruleProducts() {
 		return this.catalogruleProducts;
@@ -299,13 +299,13 @@ public class CoreWebsite implements Serializable {
 		this.productAlertStocks = productAlertStocks;
 	}
 	
-	public Set<SalesruleProductAttribute> getSalesruleProductAttributes() {
-		return this.salesruleProductAttributes;
-	}
-
-	public void setSalesruleProductAttributes(Set<SalesruleProductAttribute> salesruleProductAttributes) {
-		this.salesruleProductAttributes = salesruleProductAttributes;
-	}
+//	public Set<SalesruleProductAttribute> getSalesruleProductAttributes() {
+//		return this.salesruleProductAttributes;
+//	}
+//
+//	public void setSalesruleProductAttributes(Set<SalesruleProductAttribute> salesruleProductAttributes) {
+//		this.salesruleProductAttributes = salesruleProductAttributes;
+//	}
 	
 //	public Set<WeeeDiscount> getWeeeDiscounts() {
 //		return this.weeeDiscounts;

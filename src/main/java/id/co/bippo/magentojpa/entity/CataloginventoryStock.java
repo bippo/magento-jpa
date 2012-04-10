@@ -26,9 +26,9 @@ public class CataloginventoryStock implements Serializable {
 	@OneToMany(mappedBy="cataloginventoryStock")
 	private Set<CataloginventoryStockItem> cataloginventoryStockItems;
 
-	//bi-directional many-to-one association to CataloginventoryStockStatus
-	@OneToMany(mappedBy="cataloginventoryStock")
-	private Set<CataloginventoryStockStatus> cataloginventoryStockStatuses;
+//	//bi-directional many-to-one association to CataloginventoryStockStatus
+//	@OneToMany(mappedBy="cataloginventoryStock")
+//	private Set<CataloginventoryStockStatus> cataloginventoryStockStatuses;
 
     public CataloginventoryStock() {
     }
@@ -57,12 +57,12 @@ public class CataloginventoryStock implements Serializable {
 		this.cataloginventoryStockItems = cataloginventoryStockItems;
 	}
 	
-	public Set<CataloginventoryStockStatus> getCataloginventoryStockStatuses() {
-		return this.cataloginventoryStockStatuses;
-	}
-
-	public void setCataloginventoryStockStatuses(Set<CataloginventoryStockStatus> cataloginventoryStockStatuses) {
-		this.cataloginventoryStockStatuses = cataloginventoryStockStatuses;
-	}
+//	public Set<CataloginventoryStockStatus> getCataloginventoryStockStatuses() {
+//		return this.cataloginventoryStockStatuses;
+//	}
+//
+//	public void setCataloginventoryStockStatuses(Set<CataloginventoryStockStatus> cataloginventoryStockStatuses) {
+//		this.cataloginventoryStockStatuses = cataloginventoryStockStatuses;
+//	}
 	
 }

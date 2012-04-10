@@ -1,7 +1,11 @@
 package id.co.bippo.magentojpa.entity;
 
 import java.io.Serializable;
-import javax.persistence.*;
+
+import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 
 /**
@@ -10,6 +14,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="sales_order_status_state")
+//@IdClass(SalesOrderStatusStatePK.class)
 public class SalesOrderStatusState implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -20,9 +25,9 @@ public class SalesOrderStatusState implements Serializable {
 	private int isDefault;
 
 	//bi-directional many-to-one association to SalesOrderStatus
-    @ManyToOne
-	@JoinColumn(name="status")
-	private SalesOrderStatus salesOrderStatus;
+//    @ManyToOne
+//	@JoinColumn(name="status")
+//	private SalesOrderStatus salesOrderStatus;
 
     public SalesOrderStatusState() {
     }
@@ -43,12 +48,12 @@ public class SalesOrderStatusState implements Serializable {
 		this.isDefault = isDefault;
 	}
 
-	public SalesOrderStatus getSalesOrderStatus() {
-		return this.salesOrderStatus;
-	}
-
-	public void setSalesOrderStatus(SalesOrderStatus salesOrderStatus) {
-		this.salesOrderStatus = salesOrderStatus;
-	}
+//	public SalesOrderStatus getSalesOrderStatus() {
+//		return this.salesOrderStatus;
+//	}
+//
+//	public void setSalesOrderStatus(SalesOrderStatus salesOrderStatus) {
+//		this.salesOrderStatus = salesOrderStatus;
+//	}
 	
 }
