@@ -1,6 +1,7 @@
 package id.co.bippo.magentojpa.ui;
 
 import id.co.bippo.magentojpa.dao.ProductDao;
+import id.co.bippo.magentojpa.dao.ProductEx;
 import id.co.bippo.magentojpa.entity.CatalogProductEntity;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public class ProductView {
 		return productDao.listProductsUntyped();
 	}
 	
-	public List<Object[]> getProductsEx() {
+	public List<ProductEx> getProductsEx() {
 		return productDao.listProductsEx();
 	}
 	
