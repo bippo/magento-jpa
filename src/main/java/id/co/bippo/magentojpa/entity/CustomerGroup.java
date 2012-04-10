@@ -62,8 +62,8 @@ public class CustomerGroup implements Serializable {
 	private Set<SalesruleProductAttribute> salesruleProductAttributes;
 
 	//bi-directional many-to-one association to WeeeDiscount
-	@OneToMany(mappedBy="customerGroup")
-	private Set<WeeeDiscount> weeeDiscounts;
+//	@OneToMany(mappedBy="customerGroup")
+//	private Set<WeeeDiscount> weeeDiscounts;
 
     public CustomerGroup() {
     }
@@ -164,12 +164,12 @@ public class CustomerGroup implements Serializable {
 		this.salesruleProductAttributes = salesruleProductAttributes;
 	}
 	
-	public Set<WeeeDiscount> getWeeeDiscounts() {
-		return this.weeeDiscounts;
-	}
-
-	public void setWeeeDiscounts(Set<WeeeDiscount> weeeDiscounts) {
-		this.weeeDiscounts = weeeDiscounts;
-	}
+//	public Set<WeeeDiscount> getWeeeDiscounts() {
+//		return this.weeeDiscounts;
+//	}
+//
+//	public void setWeeeDiscounts(Set<WeeeDiscount> weeeDiscounts) {
+//		this.weeeDiscounts = weeeDiscounts;
+//	}
 	
 }
