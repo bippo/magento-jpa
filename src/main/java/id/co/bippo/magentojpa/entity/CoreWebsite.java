@@ -69,8 +69,8 @@ public class CoreWebsite implements Serializable {
 	private Set<CatalogindexMinimalPrice> catalogindexMinimalPrices;
 
 	//bi-directional many-to-one association to CatalogindexPrice
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<CatalogindexPrice> catalogindexPrices;
+//	@OneToMany(mappedBy="coreWebsite")
+//	private Set<CatalogindexPrice> catalogindexPrices;
 
 	//bi-directional many-to-one association to CataloginventoryStockStatus
 	@OneToMany(mappedBy="coreWebsite")
@@ -129,8 +129,8 @@ public class CoreWebsite implements Serializable {
 	private Set<SalesruleProductAttribute> salesruleProductAttributes;
 
 	//bi-directional many-to-one association to WeeeDiscount
-	@OneToMany(mappedBy="coreWebsite")
-	private Set<WeeeDiscount> weeeDiscounts;
+//	@OneToMany(mappedBy="coreWebsite")
+//	private Set<WeeeDiscount> weeeDiscounts;
 
 	//bi-directional many-to-one association to WeeeTax
 	@OneToMany(mappedBy="coreWebsite")
