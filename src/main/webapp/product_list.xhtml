@@ -6,13 +6,16 @@
 </h:head>
 <h:body>
 	<h:form id="productData">
-		<p:dataTable value="#{productView.productsUntyped}" var="product"
+		<p:dataTable value="#{productView.productsEx}" var="product"
 			scrollable="true" scrollHeight="400" liveScroll="true" scrollRows="50">
-			<p:column headerText="ID" style="width: 150px">
+			<p:column headerText="ID" style="width: 100px">
 				#{product[0]}
 			</p:column>
-			<p:column headerText="SKU" style="width: 250px">
+			<p:column headerText="SKU" style="width: 200px">
 				#{product[1]}
+			</p:column>
+			<p:column headerText="Name" style="width: 400px">
+				#{product[2]}
 			</p:column>
 		</p:dataTable>
 	</h:form>

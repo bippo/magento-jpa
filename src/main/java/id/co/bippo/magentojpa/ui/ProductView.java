@@ -25,4 +25,8 @@ public class ProductView {
 		return productDao.listProductsUntyped();
 	}
 	
+	public List<Object[]> getProductsEx() {
+		return productDao.listProductsEx();
+	}
+	
 }

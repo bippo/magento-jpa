@@ -59,4 +59,15 @@ public class ProductDao {
 		return query.getResultList();
 	}
 
+	@TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
+	public List<Object[]> listProductsEx() {
+		Query query = em.createQuery("SELECT p.entityId, p.sku, aName.value" +
+			" FROM CatalogProductEntity p" +
+			" JOIN p.catalogProductEntityInts aVisibility" +
+			" JOIN p.catalogProductEntityVarchars aName" +
+			" WHERE aVisibility.coreStore.storeId=0 AND aVisibility.eavAttribute.attributeCode='visibility' AND aVisibility.value=4" +
+			"   AND aName.coreStore.storeId=0 AND aName.eavAttribute.attributeCode='name'");
+		return query.getResultList();
+	}
+
 }
