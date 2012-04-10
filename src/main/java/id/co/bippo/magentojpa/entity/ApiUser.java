@@ -44,8 +44,8 @@ public class ApiUser implements Serializable {
 	private String username;
 
 	//bi-directional many-to-one association to ApiSession
-	@OneToMany(mappedBy="apiUser")
-	private Set<ApiSession> apiSessions;
+//	@OneToMany(mappedBy="apiUser")
+//	private Set<ApiSession> apiSessions;
 
     public ApiUser() {
     }
@@ -138,12 +138,12 @@ public class ApiUser implements Serializable {
 		this.username = username;
 	}
 
-	public Set<ApiSession> getApiSessions() {
-		return this.apiSessions;
-	}
-
-	public void setApiSessions(Set<ApiSession> apiSessions) {
-		this.apiSessions = apiSessions;
-	}
+//	public Set<ApiSession> getApiSessions() {
+//		return this.apiSessions;
+//	}
+//
+//	public void setApiSessions(Set<ApiSession> apiSessions) {
+//		this.apiSessions = apiSessions;
+//	}
 	
 }
